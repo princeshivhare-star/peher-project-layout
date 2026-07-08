@@ -39,7 +39,7 @@ export function WhatIBring() {
           observer.disconnect()
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     )
 
     observer.observe(node)
@@ -52,7 +52,7 @@ export function WhatIBring() {
       aria-label="What I bring to the table"
       className="mx-auto max-w-6xl overflow-hidden px-5 py-16 md:px-8 md:py-24"
     >
-      {/* Desktop / tablet — floating badge cloud */}
+      {/* Desktop / Tablet */}
       <div className="relative hidden min-h-[620px] md:block">
         {badges.map((badge) => (
           <span
@@ -72,37 +72,39 @@ export function WhatIBring() {
           </span>
         ))}
 
-        {/* Center Logo Only */}
-        <img
-          src="/logo.png"
-          alt="Logo"
-          className="absolute left-1/2 top-1/2 h-48 w-auto transition-all duration-700 md:h-56 lg:h-64"
+        {/* Perfectly Centered Logo */}
+        <div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-700 ease-out"
           style={{
             opacity: visible ? 1 : 0,
-            transform: visible
-              ? 'translate(-50%, -50%) scale(1)'
-              : 'translate(-50%, -50%) scale(0.8)',
+            transform: visible ? 'scale(1)' : 'scale(0.8)',
           }}
-        />
+        >
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="w-[260px] lg:w-[340px] xl:w-[400px] h-auto"
+          />
+        </div>
       </div>
 
-      {/* Mobile layout */}
-      <div className="flex flex-col items-center text-center md:hidden">
+      {/* Mobile */}
+      <div className="flex flex-col items-center md:hidden">
         <img
           src="/logo.png"
           alt="Logo"
-          className="mb-8 h-32 w-auto transition-all duration-700"
+          className="w-52 h-auto transition-all duration-700"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'scale(1)' : 'scale(0.8)',
           }}
         />
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           {badges.map((badge, i) => (
             <span
               key={badge.label}
-              className="rounded-full bg-blue-brand/15 px-4 py-2 text-sm font-semibold text-foreground transition-[transform,opacity] duration-500 ease-out"
+              className="rounded-full bg-blue-brand/15 px-4 py-2 text-sm font-semibold text-foreground transition-all duration-500 ease-out"
               style={{
                 transitionDelay: `${i * 60}ms`,
                 opacity: visible ? 1 : 0,
