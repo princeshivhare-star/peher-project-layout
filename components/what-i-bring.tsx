@@ -86,7 +86,7 @@ export function WhatIBring() {
             className="mb-5 w-16 h-auto lg:w-20"
           />
 
-          <h2 className="text-center font-script text-[4.2rem] font-normal leading-[0.95] text-blue-brand md:text-[5rem] lg:text-[5.8rem]">
+          <h2 className="text-center font-script text-[4.2rem] font-normal leading-[0.95] text-blue-900 md:text-[5rem] lg:text-[5.8rem]">
             What I bring
             <br />
             to the table
