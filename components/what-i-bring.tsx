@@ -13,15 +13,23 @@ type Badge = {
 }
 
 const badges: Badge[] = [
-  { label: 'Brand Identity', top: '6%', left: '47%', rotate: -8, fx: -10, fy: 170, delay: 60 },
-  { label: 'Logo Design', top: '16%', left: '72%', rotate: -7, fx: -150, fy: 150, delay: 160 },
-  { label: 'Packaging Design', top: '20%', left: '20%', rotate: 7, fx: 150, fy: 140, delay: 20 },
-  { label: 'Label Design', top: '42%', left: '83%', rotate: 6, fx: -180, fy: 40, delay: 220 },
-  { label: 'Business Cards', top: '45%', left: '11%', rotate: -6, fx: 180, fy: 40, delay: 100 },
-  { label: 'Branding', top: '65%', left: '79%', rotate: 8, fx: -160, fy: -80, delay: 260 },
-  { label: 'Pitch Deck Design', top: '69%', left: '14%', rotate: 4, fx: 160, fy: -70, delay: 200 },
-  { label: 'Visual Design', top: '86%', left: '66%', rotate: -14, fx: -80, fy: -150, delay: 320 },
-  { label: 'Brochure Design', top: '88%', left: '38%', rotate: -4, fx: 60, fy: -160, delay: 340 },
+  { label: 'Brand Identity',     top: '8%',  left: '50%', rotate: -4, fx: 0,    fy: 170,  delay: 60 },
+
+  { label: 'Logo Design',        top: '18%', left: '73%', rotate: -8, fx: -140, fy: 130,  delay: 100 },
+
+  { label: 'Packaging Design',   top: '38%', left: '86%', rotate: 6,  fx: -170, fy: 20,   delay: 140 },
+
+  { label: 'Label Design',       top: '66%', left: '79%', rotate: 8,  fx: -140, fy: -90,  delay: 180 },
+
+  { label: 'Visual Design',      top: '84%', left: '62%', rotate: -8, fx: -60,  fy: -150, delay: 220 },
+
+  { label: 'Brochure Design',    top: '84%', left: '38%', rotate: 6,  fx: 60,   fy: -150, delay: 260 },
+
+  { label: 'Pitch Deck Design',  top: '66%', left: '21%', rotate: -6, fx: 140,  fy: -90,  delay: 300 },
+
+  { label: 'Business Cards',     top: '38%', left: '14%', rotate: 6,  fx: 170,  fy: 20,   delay: 340 },
+
+  { label: 'Branding',           top: '18%', left: '27%', rotate: -8, fx: 140,  fy: 130,  delay: 380 },
 ]
 
 export function WhatIBring() {
