@@ -72,9 +72,9 @@ export function WhatIBring() {
           </span>
         ))}
 
-        {/* Perfectly Centered Logo */}
+        {/* Center Logo + Text */}
         <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-700 ease-out"
+          className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-out"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'scale(1)' : 'scale(0.8)',
@@ -83,22 +83,44 @@ export function WhatIBring() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="w-[260px] lg:w-[340px] xl:w-[400px] h-auto"
+            className="w-[240px] lg:w-[300px] xl:w-[340px] h-auto"
           />
+
+          <h2 className="mt-8 text-center text-4xl font-bold tracking-tight md:text-6xl">
+            What I Bring
+            <br />
+            to the Table
+          </h2>
+
+          <p className="mt-6 max-w-sm text-center text-base leading-relaxed text-muted-foreground text-pretty">
+            Brand systems and visual identities that make businesses easier to
+            recognise, trust and remember.
+          </p>
         </div>
       </div>
 
       {/* Mobile */}
-      <div className="flex flex-col items-center md:hidden">
+      <div className="flex flex-col items-center text-center md:hidden">
         <img
           src="/logo.png"
           alt="Logo"
-          className="w-52 h-auto transition-all duration-700"
+          className="w-44 h-auto transition-all duration-700"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'scale(1)' : 'scale(0.8)',
           }}
         />
+
+        <h2 className="mt-6 text-4xl font-bold tracking-tight">
+          What I Bring
+          <br />
+          to the Table
+        </h2>
+
+        <p className="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground text-pretty">
+          Brand systems and visual identities that make businesses easier to
+          recognise, trust and remember.
+        </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           {badges.map((badge, i) => (
