@@ -82,7 +82,7 @@ export function WhatIBring() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="mb-4 h-auto w-12 md:mb-5 md:w-16 lg:w-20"
+            className="mb-4 h-auto w-20 md:mb-5 md:w-28 lg:w-35"
           />
 
           <h2 className="text-center font-script text-[3.2rem] font-normal leading-[0.95] text-[#0F1E73] md:text-[5rem] lg:text-[5.8rem]">
