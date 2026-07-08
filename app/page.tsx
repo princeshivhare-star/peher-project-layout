@@ -19,27 +19,34 @@ export default function HomePage() {
         {/* Main positioning statement */}
         <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
           <p className="font-script text-2xl text-yellow-brand md:text-3xl">
-            Four years, plenty of pixels and no room for forgettable brand identities.
+            Four years, plenty of pixels and no room for forgettable brand
+            identities.
           </p>
 
-          <h2 className="mt-8 max-w-none text-[2.25rem] font-bold leading-[1.08] tracking-[-0.04em] text-pretty md:text-[3.75rem] lg:text-[4.75rem] xl:text-[5.5rem]">
-            I build distinctive brand worlds that
-            <br />
-            make businesses easier to{' '}
-            <span className="font-script font-normal text-blue-brand">
-              recognise
+          <h2 className="mt-8 text-[2.2rem] font-bold leading-[1.08] tracking-[-0.04em] md:text-[3.7rem] lg:text-[4.8rem] xl:text-[5.4rem]">
+            <span className="block">
+              I build distinctive brand worlds that
             </span>
-            ,
-            <br />
-            easier to{' '}
-            <span className="font-script font-normal text-yellow-brand">
-              trust
-            </span>{' '}
-            and much harder to{' '}
-            <span className="font-script font-normal text-lilac-brand">
-              forget
+
+            <span className="block">
+              make businesses easier to{' '}
+              <span className="font-script font-normal text-blue-brand">
+                recognise
+              </span>
+              ,
             </span>
-            .
+
+            <span className="block">
+              easier to{' '}
+              <span className="font-script font-normal text-yellow-brand">
+                trust
+              </span>{' '}
+              and much harder to{' '}
+              <span className="font-script font-normal text-lilac-brand">
+                forget
+              </span>
+              .
+            </span>
           </h2>
         </section>
 
