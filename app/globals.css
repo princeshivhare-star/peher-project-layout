@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-blue-brand: var(--blue-brand);
+  --color-yellow-brand: var(--yellow-brand);
+  --color-lilac-brand: var(--lilac-brand);
+  --color-peher-green: var(--peher-green);
+  --color-peher-sage: var(--peher-sage);
+  --color-peher-cream: var(--peher-cream);
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+  --font-script: var(--font-caveat), cursive;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: light;
+  /* Muskan personal brand */
+  --background: #fcf9f5;
+  --foreground: #282621;
+  --card: #ffffff;
+  --card-foreground: #282621;
+  --popover: #ffffff;
+  --popover-foreground: #282621;
+  --primary: #6c93ff;
+  --primary-foreground: #fcf9f5;
+  --secondary: #f3eee6;
+  --secondary-foreground: #282621;
+  --muted: #f3eee6;
+  --muted-foreground: #6f6a5e;
+  --accent: #f9bb22;
+  --accent-foreground: #282621;
+  --destructive: #d64533;
+  --border: #e5ded2;
+  --input: #e5ded2;
+  --ring: #6c93ff;
+  --radius: 0.75rem;
+  /* Brand accents */
+  --blue-brand: #6c93ff;
+  --yellow-brand: #f9bb22;
+  --lilac-brand: #ca81dc;
+  /* Peher project palette */
+  --peher-green: #313929;
+  --peher-sage: #747e64;
+  --peher-cream: #fdf9f1;
+}
+
+/* Dark theme scope — used by the homepage, mirroring the reference site */
+.theme-dark {
+  color-scheme: dark;
+  --background: #0b0b0a;
+  --foreground: #f5f2ec;
+  --card: #161514;
+  --card-foreground: #f5f2ec;
+  --popover: #161514;
+  --popover-foreground: #f5f2ec;
+  --primary: #6c93ff;
+  --primary-foreground: #0b0b0a;
+  --secondary: #1c1b19;
+  --secondary-foreground: #f5f2ec;
+  --muted: #1c1b19;
+  --muted-foreground: #97918a;
+  --accent: #f9bb22;
+  --accent-foreground: #0b0b0a;
+  --border: #262522;
+  --input: #262522;
+  --ring: #6c93ff;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
