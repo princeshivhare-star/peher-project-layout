@@ -10,37 +10,63 @@ export default function HomePage() {
   return (
     <>
       <SiteHeader />
+
       <main>
         <Hero />
+
         <ProjectReel />
 
         {/* Main positioning statement */}
-        <section className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-24">
+        <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
           <p className="font-script text-3xl text-yellow-brand md:text-4xl">
-            Four years, plenty of pixels and no room for forgettable brand identities.
+            Four years, plenty of pixels and no room for forgettable brand
+            identities.
           </p>
-          <p className="mt-6 max-w-4xl text-2xl font-semibold leading-snug text-balance md:text-4xl">
-            I build distinctive brand worlds that make businesses easier to{' '}
-            <span className="text-blue-brand">recognise</span>, easier to{' '}
-            <span className="text-yellow-brand">trust</span> and much harder to{' '}
-            <span className="text-lilac-brand">forget</span>.
-          </p>
+
+          <h2 className="mt-8 max-w-none text-[2.6rem] font-bold leading-[1.08] tracking-[-0.05em] text-pretty md:text-[4.5rem] lg:text-[5.8rem] xl:text-[6.5rem]">
+            I build distinctive brand worlds that
+            <br />
+            make businesses easier to{' '}
+            <span className="font-script text-blue-brand font-normal">
+              recognise
+            </span>
+            ,
+            <br />
+            easier to{' '}
+            <span className="font-script text-yellow-brand font-normal">
+              trust
+            </span>{' '}
+            and much harder to{' '}
+            <span className="font-script text-lilac-brand font-normal">
+              forget
+            </span>
+            .
+          </h2>
         </section>
 
         <FeaturedProjects />
+
         <Services />
+
         <WhatIBring />
 
-        {/* Client testimonials — content coming shortly */}
-        <section aria-label="Client testimonials" className="border-t border-border">
+        {/* Client testimonials */}
+        <section
+          aria-label="Client testimonials"
+          className="border-t border-border"
+        >
           <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-24">
-            <h2 className="text-3xl font-bold tracking-tight md:text-5xl">Client Testimonials</h2>
+            <h2 className="text-3xl font-bold tracking-tight md:text-5xl">
+              Client Testimonials
+            </h2>
+
             <p className="mt-6 font-script text-2xl text-muted-foreground md:text-3xl">
               Kind words loading… check back soon.
             </p>
           </div>
         </section>
       </main>
+
       <SiteFooter />
     </>
   )
