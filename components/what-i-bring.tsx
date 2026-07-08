@@ -77,26 +77,40 @@ export function WhatIBring() {
         ))}
 
         {/* Centre content */}
-        <div
-          className="absolute top-1/2 left-1/2 flex w-full max-w-md flex-col items-center text-center transition-[transform,opacity] duration-700 ease-out"
-          style={{
-            opacity: visible ? 1 : 0,
-            transform: visible
-              ? 'translate(-50%, -50%) scale(1)'
-              : 'translate(-50%, -50%) scale(0.8)',
-          }}
-        >
-          <img src="/logo.png" alt="Logo" className="mb-5 h-28 w-auto" />
-          <h2 className="text-4xl font-bold tracking-tight md:text-6xl">
-            What I Bring
-            <br />
-            to the Table
-          </h2>
-          <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground text-pretty">
-            Brand systems and visual identities that make businesses easier to
-            recognise, trust and remember.
-          </p>
-        </div>
+        {/* Logo */}
+<img
+  src="/logo.png"
+  alt="Logo"
+  className="absolute left-1/2 top-[34%] h-28 w-auto transition-all duration-700"
+  style={{
+    opacity: visible ? 1 : 0,
+    transform: visible
+      ? "translateX(-50%) scale(1)"
+      : "translateX(-50%) scale(0.8)",
+  }}
+/>
+
+{/* Heading + Description */}
+<div
+  className="absolute left-1/2 top-1/2 flex w-full max-w-md flex-col items-center text-center transition-all duration-700 ease-out"
+  style={{
+    opacity: visible ? 1 : 0,
+    transform: visible
+      ? "translate(-50%, -50%) scale(1)"
+      : "translate(-50%, -50%) scale(0.8)",
+  }}
+>
+  <h2 className="text-4xl font-bold tracking-tight md:text-6xl">
+    What I Bring
+    <br />
+    to the Table
+  </h2>
+
+  <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground text-pretty">
+    Brand systems and visual identities that make businesses easier to
+    recognise, trust and remember.
+  </p>
+</div>
       </div>
 
       {/* Mobile — simple stacked layout with a lighter stagger */}
