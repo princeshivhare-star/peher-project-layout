@@ -25,6 +25,15 @@ const labels = [
   'Business Cards',
   'Brand Guidelines',
 ]
+  
+if (label === 'Visual Design') {
+      top -= 5
+    }
+
+    // Move Brochure Design up
+if (label === 'Brochure Design') {
+      top -= 5
+    }
 
 export function WhatIBring() {
   const sectionRef = useRef<HTMLDivElement>(null)
