@@ -29,6 +29,7 @@ export default function HomePage() {
 
         <FeaturedProjects />
         <Services />
+        <WhatIBring />
 
         {/* Client testimonials — content coming shortly */}
         <section aria-label="Client testimonials" className="border-t border-border">
