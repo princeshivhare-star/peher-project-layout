@@ -39,7 +39,7 @@ export function WhatIBring() {
           observer.disconnect()
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.25 }
     )
 
     observer.observe(node)
@@ -52,12 +52,11 @@ export function WhatIBring() {
       aria-label="What I bring to the table"
       className="mx-auto max-w-6xl overflow-hidden px-5 py-16 md:px-8 md:py-24"
     >
-      {/* Desktop / Tablet */}
-      <div className="relative hidden min-h-[620px] md:block">
+      <div className="relative min-h-[620px] md:min-h-[620px]">
         {badges.map((badge) => (
           <span
             key={badge.label}
-            className="absolute rounded-full bg-blue-brand/20 px-6 py-3 text-base font-semibold whitespace-nowrap text-blue-brand transition-[transform,opacity] duration-700 ease-out will-change-transform"
+            className="absolute rounded-full bg-blue-brand/20 px-3 py-2 text-[10px] font-semibold whitespace-nowrap text-blue-brand transition-[transform,opacity] duration-700 ease-out will-change-transform sm:px-4 sm:text-xs md:px-6 md:py-3 md:text-base"
             style={{
               top: badge.top,
               left: badge.left,
@@ -83,62 +82,19 @@ export function WhatIBring() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="mb-5 w-16 h-auto lg:w-20"
+            className="mb-4 h-auto w-12 md:mb-5 md:w-16 lg:w-20"
           />
 
-          <h2 className="text-center font-script text-[4.2rem] font-normal leading-[0.95] text-blue-900 md:text-[5rem] lg:text-[5.8rem]">
+          <h2 className="text-center font-script text-[3.2rem] font-normal leading-[0.95] text-[#0F1E73] md:text-[5rem] lg:text-[5.8rem]">
             What I bring
             <br />
             to the table
           </h2>
 
-          <p className="mt-8 max-w-xl text-center text-lg leading-snug text-muted-foreground md:text-xl">
-            Digital experiences that engage users and help your
-            <br />
-            startup stand out from day one
+          <p className="mt-6 max-w-[280px] text-center text-sm leading-snug text-muted-foreground md:mt-8 md:max-w-xl md:text-xl">
+            Digital experiences that engage users and help your startup stand
+            out from day one
           </p>
-        </div>
-      </div>
-
-      {/* Mobile */}
-      <div className="flex flex-col items-center text-center md:hidden">
-        <img
-          src="/logo.png"
-          alt="Logo"
-          className="mb-5 w-14 h-auto transition-all duration-700"
-          style={{
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'scale(1)' : 'scale(0.8)',
-          }}
-        />
-
-        <h2 className="text-center font-script text-[4.2rem] font-normal leading-[0.95] text-[#0F1E73] md:text-[5rem] lg:text-[5.8rem]">
-          What I bring
-          <br />
-          to the table
-        </h2>
-
-        <p className="mt-6 max-w-sm text-base leading-snug text-muted-foreground">
-          Digital experiences that engage users and help your startup stand out
-          from day one
-        </p>
-
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
-          {badges.map((badge, i) => (
-            <span
-              key={badge.label}
-              className="rounded-full bg-blue-brand/20 px-4 py-2 text-sm font-semibold text-blue-brand transition-all duration-500 ease-out"
-              style={{
-                transitionDelay: `${i * 60}ms`,
-                opacity: visible ? 1 : 0,
-                transform: visible
-                  ? 'scale(1) translateY(0)'
-                  : 'scale(0.6) translateY(12px)',
-              }}
-            >
-              {badge.label}
-            </span>
-          ))}
         </div>
       </div>
     </section>
