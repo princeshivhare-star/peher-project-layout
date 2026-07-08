@@ -12,10 +12,6 @@ type Badge = {
   delay: number
 }
 
-// Desktop cloud positions. `fx` / `fy` describe the direction each pill
-// travels FROM (pulled toward the centre) so the pop-in animation reads
-// as "inner to outer" — pills start collapsed near the logo and spring
-// outward into place, staggered by `delay`.
 const badges: Badge[] = [
   { label: 'Brand Identity Systems', top: '3%', left: '46%', rotate: -6, fx: -10, fy: 170, delay: 60 },
   { label: 'Visual Storytelling', top: '13%', left: '71%', rotate: 5, fx: -150, fy: 150, delay: 160 },
@@ -76,55 +72,31 @@ export function WhatIBring() {
           </span>
         ))}
 
-        {/* Centre content */}
-        {/* Logo */}
-<img
-  src="/logo.png"
-  alt="Logo"
-  className="absolute left-1/2 top-[34%] h-28 w-auto transition-all duration-700"
-  style={{
-    opacity: visible ? 1 : 0,
-    transform: visible
-      ? "translateX(-50%) scale(1)"
-      : "translateX(-50%) scale(0.8)",
-  }}
-/>
-
-{/* Heading + Description */}
-<div
-  className="absolute left-1/2 top-1/2 flex w-full max-w-md flex-col items-center text-center transition-all duration-700 ease-out"
-  style={{
-    opacity: visible ? 1 : 0,
-    transform: visible
-      ? "translate(-50%, -50%) scale(1)"
-      : "translate(-50%, -50%) scale(0.8)",
-  }}
->
-  <h2 className="text-4xl font-bold tracking-tight md:text-6xl">
-    What I Bring
-    <br />
-    to the Table
-  </h2>
-
-  <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground text-pretty">
-    Brand systems and visual identities that make businesses easier to
-    recognise, trust and remember.
-  </p>
-</div>
+        {/* Center Logo Only */}
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="absolute left-1/2 top-1/2 h-48 w-auto transition-all duration-700 md:h-56 lg:h-64"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible
+              ? 'translate(-50%, -50%) scale(1)'
+              : 'translate(-50%, -50%) scale(0.8)',
+          }}
+        />
       </div>
 
-      {/* Mobile — simple stacked layout with a lighter stagger */}
+      {/* Mobile layout */}
       <div className="flex flex-col items-center text-center md:hidden">
-        <img src="/logo.png" alt="Logo" className="mb-5 h-10 w-auto" />
-        <h2 className="text-4xl font-bold tracking-tight">
-          What I Bring
-          <br />
-          to the Table
-        </h2>
-        <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground text-pretty">
-          Brand systems and visual identities that make businesses easier to
-          recognise, trust and remember.
-        </p>
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="mb-8 h-32 w-auto transition-all duration-700"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'scale(1)' : 'scale(0.8)',
+          }}
+        />
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {badges.map((badge, i) => (
