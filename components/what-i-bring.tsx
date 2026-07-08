@@ -86,7 +86,7 @@ export function WhatIBring() {
               : 'translate(-50%, -50%) scale(0.8)',
           }}
         >
-          <img src="/logo.png" alt="Logo" className="mb-5 h-20 w-auto" />
+          <img src="/logo.png" alt="Logo" className="mb-5 h-28 w-auto" />
           <h2 className="text-4xl font-bold tracking-tight md:text-6xl">
             What I Bring
             <br />
