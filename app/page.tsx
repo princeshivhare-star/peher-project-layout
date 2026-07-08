@@ -23,7 +23,7 @@ export default function HomePage() {
             identities.
           </p>
 
-          <h2 className="mt-8 max-w-none text-[2.6rem] font-bold leading-[1.08] tracking-[-0.05em] text-pretty md:text-[4.5rem] lg:text-[5.8rem] xl:text-[6.5rem]">
+          className="mt-8 max-w-none text-[2.2rem] font-bold leading-[1.1] tracking-[-0.04em] text-pretty md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5.2rem]"
             I build distinctive brand worlds that
             <br />
             make businesses easier to{' '}
