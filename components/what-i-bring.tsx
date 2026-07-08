@@ -13,15 +13,15 @@ type Badge = {
 }
 
 const badges: Badge[] = [
-  { label: 'Product Design', top: '6%', left: '47%', rotate: -8, fx: -10, fy: 170, delay: 60 },
-  { label: 'User Experience Design', top: '16%', left: '72%', rotate: -7, fx: -150, fy: 150, delay: 160 },
-  { label: 'Design Systems', top: '20%', left: '20%', rotate: 7, fx: 150, fy: 140, delay: 20 },
-  { label: 'User Interface Design', top: '42%', left: '83%', rotate: 6, fx: -180, fy: 40, delay: 220 },
-  { label: 'User Research', top: '45%', left: '11%', rotate: -6, fx: 180, fy: 40, delay: 100 },
+  { label: 'Brand Identity', top: '6%', left: '47%', rotate: -8, fx: -10, fy: 170, delay: 60 },
+  { label: 'Logo Design', top: '16%', left: '72%', rotate: -7, fx: -150, fy: 150, delay: 160 },
+  { label: 'Packaging Design', top: '20%', left: '20%', rotate: 7, fx: 150, fy: 140, delay: 20 },
+  { label: 'Label Design', top: '42%', left: '83%', rotate: 6, fx: -180, fy: 40, delay: 220 },
+  { label: 'Business Cards', top: '45%', left: '11%', rotate: -6, fx: 180, fy: 40, delay: 100 },
   { label: 'Branding', top: '65%', left: '79%', rotate: 8, fx: -160, fy: -80, delay: 260 },
   { label: 'Pitch Deck Design', top: '69%', left: '14%', rotate: 4, fx: 160, fy: -70, delay: 200 },
   { label: 'Visual Design', top: '84%', left: '66%', rotate: -14, fx: -80, fy: -150, delay: 320 },
-  { label: 'Framer Development', top: '86%', left: '38%', rotate: -4, fx: 60, fy: -160, delay: 340 },
+  { label: 'Brochure Design', top: '86%', left: '38%', rotate: -4, fx: 60, fy: -160, delay: 340 },
 ]
 
 export function WhatIBring() {
@@ -92,8 +92,7 @@ export function WhatIBring() {
           </h2>
 
           <p className="mt-6 max-w-[280px] text-center text-sm leading-snug text-muted-foreground md:mt-8 md:max-w-xl md:text-xl">
-            Digital experiences that engage users and help your startup stand
-            out from day one
+            Creative visuals that elevate your brand and make a lasting impression.
           </p>
         </div>
       </div>
