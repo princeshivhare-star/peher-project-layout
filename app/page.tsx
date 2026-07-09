@@ -17,40 +17,40 @@ export default function HomePage() {
         <ProjectReel />
 
         {/* Main positioning statement */}
-        <section className="mx-auto flex justify-center px-6 py-14 md:px-10 md:py-20">
-          <h2 className="mx-auto max-w-[980px] text-center text-[1.3rem] font-semibold leading-[1.08] tracking-[-0.04em] md:text-[2.15rem] lg:text-[2.85rem] xl:text-[3.15rem]">
-            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-blue-brand">
+        <section className="mx-auto flex justify-center px-6 py-12 md:px-10 md:py-16">
+          <h2 className="mx-auto max-w-[920px] text-center text-[1.2rem] font-semibold leading-[1.02] tracking-[-0.04em] md:text-[2rem] lg:text-[2.65rem] xl:text-[2.95rem]">
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-blue-brand">
               Four years,
             </span>{' '}
-            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-yellow-brand">
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-yellow-brand">
               plenty of pixels
             </span>{' '}
             and no room
             <br />
 
             for forgettable{' '}
-            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-lilac-brand">
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-lilac-brand">
               brand identities
             </span>
             .
             <br />
 
             I build{' '}
-            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-blue-brand">
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-blue-brand">
               distinctive
             </span>{' '}
             brand worlds that
             <br />
 
             make businesses easier to{' '}
-            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-yellow-brand">
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-yellow-brand">
               recognise
             </span>
             ,
             <br />
 
             easier to{' '}
-            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-lilac-brand">
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-lilac-brand">
               trust
             </span>{' '}
             and much harder to forget.
