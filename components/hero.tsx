@@ -5,60 +5,35 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#faf7f2] px-6 pt-28 pb-16 md:px-10 md:pt-36 md:pb-24"
+      className="relative min-h-screen overflow-hidden bg-black px-5 pt-10 pb-12 text-center text-white"
     >
-      {/* Background Glow */}
-      <div className="absolute right-0 top-20 h-[520px] w-[520px] rounded-full bg-[#cbb6ff]/20 blur-[140px]" />
-      <div className="absolute bottom-0 right-20 h-[420px] w-[420px] rounded-full bg-[#ffd77a]/20 blur-[120px]" />
+      <h1 className="relative z-20 mx-auto text-[4.2rem] font-black uppercase leading-[0.82] tracking-[-0.06em] md:text-[8rem] lg:text-[11rem] xl:text-[13rem]">
+        Muskan Varotaria
+      </h1>
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-        {/* LEFT */}
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground">
-            Brand &amp; Visual Identity Designer
-          </p>
-
-          <h1 className="mt-8 text-[4rem] font-bold leading-[0.9] tracking-[-0.05em] md:text-[6rem] lg:text-[7.5rem]">
-            Muskan
-            <br />
-            Varotaria
-          </h1>
-
-          <p className="mt-8 max-w-md text-lg leading-8 text-muted-foreground">
-            I turn smart ideas into brands people notice,
-            trust and choose through thoughtful visual
-            identity and branding.
-          </p>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="#projects"
-              className="rounded-full bg-black px-7 py-4 text-sm font-semibold text-white transition hover:scale-105"
-            >
-              View Projects →
-            </Link>
-
-            <Link
-              href="#contact"
-              className="rounded-full border border-black px-7 py-4 text-sm font-semibold transition hover:bg-black hover:text-white"
-            >
-              Let's Talk →
-            </Link>
-          </div>
-        </div>
-
-        {/* RIGHT */}
-        <div className="relative flex justify-center lg:justify-end">
+      <div className="relative z-10 mx-auto -mt-4 flex justify-center md:-mt-8 lg:-mt-12">
+        <div className="relative h-[430px] w-[300px] overflow-hidden rounded-t-full bg-[#ff2b1f] md:h-[560px] md:w-[390px] lg:h-[620px] lg:w-[430px]">
           <Image
             src="/muskan.png"
             alt="Muskan Varotaria"
-            width={700}
-            height={900}
+            fill
             priority
-            className="relative z-10 w-full max-w-[620px] object-contain"
+            className="object-cover object-center"
           />
         </div>
       </div>
+
+      <p className="relative z-20 mx-auto -mt-8 max-w-4xl text-[2rem] font-black uppercase leading-[0.95] tracking-[-0.04em] md:-mt-12 md:text-[3rem] lg:text-[3.7rem]">
+        I’m Muskan, a passionate visually striking and user-friendly designer.
+      </p>
+
+      <Link
+        href="/#contact"
+        className="relative z-20 mt-12 inline-flex items-center gap-4 rounded-full bg-white/15 px-8 py-4 text-lg font-medium text-white transition hover:bg-white hover:text-black"
+      >
+        Let&apos;s Work Together
+        <span aria-hidden="true">→</span>
+      </Link>
     </section>
   )
 }
