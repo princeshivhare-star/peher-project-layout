@@ -84,7 +84,7 @@ export function WhatIBring() {
       aria-label="What I bring to the table"
       className="mx-auto max-w-6xl overflow-hidden px-5 pt-6 pb-20 md:px-8 md:pt-10 md:pb-28"
     >
-      <div className="relative min-h-[780px] md:min-h-[860px]">
+      <div className="relative min-h-[720px] md:min-h-[800px]">
         {badges.map((badge) => (
           <span
             key={badge.label}
@@ -115,19 +115,14 @@ export function WhatIBring() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="mb-5 h-auto w-20 md:w-28 lg:w-32"
+            className="mb-5 h-auto w-24 md:w-32 lg:w-36"
           />
 
-          <h2 className="text-center font-script text-[3.2rem] font-normal leading-[0.95] text-[#0F1E73] md:text-[5rem] lg:text-[5.8rem]">
+          <h2 className="text-center font-script text-[3.2rem] font-normal leading-[0.82] text-foreground md:text-[5rem] lg:text-[5.8rem]">
             What I bring
             <br />
             to the table
           </h2>
-
-          <p className="mt-10 max-w-xs text-center text-sm leading-relaxed text-muted-foreground md:max-w-lg md:text-xl">
-            Creative visuals that elevate your brand and make a lasting
-            impression.
-          </p>
         </div>
       </div>
     </section>
