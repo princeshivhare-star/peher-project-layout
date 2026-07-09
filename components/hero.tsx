@@ -50,7 +50,7 @@ export function Hero() {
 
           <div className="relative h-[390px] w-[300px] overflow-hidden rounded-t-[160px] rounded-b-[36px] bg-secondary shadow-sm md:h-[500px] md:w-[380px] lg:h-[560px] lg:w-[420px]">
             <Image
-              src="/muskan.png"
+              src="/muskan-original.png"
               alt="Muskan Varotaria"
               fill
               priority
