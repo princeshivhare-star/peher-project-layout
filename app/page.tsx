@@ -17,45 +17,40 @@ export default function HomePage() {
         <ProjectReel />
 
         {/* Main positioning statement */}
-        <section className="mx-auto flex justify-center px-6 py-16 md:px-10 md:py-24">
-          <h2 className="max-w-[1050px] mx-auto text-center text-[1.45rem] font-semibold leading-[1.15] tracking-[-0.04em] md:text-[2.4rem] lg:text-[3.15rem] xl:text-[3.5rem]">
-            {/* Line 1 */}
-            <span className="font-dribelland text-[1.65em] font-normal leading-none tracking-normal text-blue-brand">
+        <section className="mx-auto flex justify-center px-6 py-14 md:px-10 md:py-20">
+          <h2 className="mx-auto max-w-[980px] text-center text-[1.3rem] font-semibold leading-[1.08] tracking-[-0.04em] md:text-[2.15rem] lg:text-[2.85rem] xl:text-[3.15rem]">
+            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-blue-brand">
               Four years,
             </span>{' '}
-            <span className="font-dribelland text-[1.65em] font-normal leading-none tracking-normal text-yellow-brand">
+            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-yellow-brand">
               plenty of pixels
             </span>{' '}
             and no room
             <br />
 
-            {/* Line 2 */}
             for forgettable{' '}
-            <span className="font-dribelland text-[1.65em] font-normal leading-none tracking-normal text-lilac-brand">
+            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-lilac-brand">
               brand identities
             </span>
             .
             <br />
 
-            {/* Line 3 */}
             I build{' '}
-            <span className="font-dribelland text-[1.65em] font-normal leading-none tracking-normal text-blue-brand">
+            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-blue-brand">
               distinctive
             </span>{' '}
             brand worlds that
             <br />
 
-            {/* Line 4 */}
             make businesses easier to{' '}
-            <span className="font-dribelland text-[1.65em] font-normal leading-none tracking-normal text-yellow-brand">
+            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-yellow-brand">
               recognise
             </span>
             ,
             <br />
 
-            {/* Line 5 */}
             easier to{' '}
-            <span className="font-dribelland text-[1.65em] font-normal leading-none tracking-normal text-lilac-brand">
+            <span className="font-dribelland text-[1.5em] font-normal leading-none tracking-normal text-lilac-brand">
               trust
             </span>{' '}
             and much harder to forget.
