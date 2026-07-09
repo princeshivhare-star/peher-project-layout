@@ -5,33 +5,39 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="relative min-h-screen overflow-hidden bg-black px-5 pt-10 pb-12 text-center text-white"
+      className="relative min-h-screen overflow-hidden bg-black px-5 pt-8 pb-10 text-center text-white"
     >
-      <h1 className="relative z-20 mx-auto text-[4.2rem] font-black uppercase leading-[0.82] tracking-[-0.06em] md:text-[8rem] lg:text-[11rem] xl:text-[13rem]">
+      {/* Name */}
+      <h1 className="relative z-20 mx-auto text-[3rem] font-black uppercase leading-[0.82] tracking-[-0.06em] md:text-[5rem] lg:text-[7rem] xl:text-[8.5rem]">
         Muskan Varotaria
       </h1>
 
-      <div className="relative z-10 mx-auto -mt-4 flex justify-center md:-mt-8 lg:-mt-12">
-        <div className="relative h-[430px] w-[300px] overflow-hidden rounded-t-full bg-[#ff2b1f] md:h-[560px] md:w-[390px] lg:h-[620px] lg:w-[430px]">
+      {/* Portrait */}
+      <div className="relative z-10 mx-auto -mt-2 flex justify-center md:-mt-4 lg:-mt-6">
+        <div className="relative h-[280px] w-[200px] overflow-hidden rounded-t-[120px] bg-[#ff2b1f] md:h-[360px] md:w-[260px] md:rounded-t-[150px] lg:h-[440px] lg:w-[320px] lg:rounded-t-[180px]">
           <Image
             src="/muskan.png"
             alt="Muskan Varotaria"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-top"
           />
         </div>
       </div>
 
-      <p className="relative z-20 mx-auto -mt-8 max-w-4xl text-[2rem] font-black uppercase leading-[0.95] tracking-[-0.04em] md:-mt-12 md:text-[3rem] lg:text-[3.7rem]">
-        I’m Muskan, a passionate visually striking and user-friendly designer.
+      {/* Description */}
+      <p className="relative z-20 mx-auto mt-6 max-w-3xl text-[1.2rem] font-black uppercase leading-[1] tracking-[-0.04em] md:text-[1.8rem] lg:text-[2.3rem]">
+        I'M MUSKAN, A PASSIONATE VISUALLY STRIKING
+        <br />
+        AND USER-FRIENDLY DESIGNER.
       </p>
 
+      {/* Button */}
       <Link
         href="/#contact"
-        className="relative z-20 mt-12 inline-flex items-center gap-4 rounded-full bg-white/15 px-8 py-4 text-lg font-medium text-white transition hover:bg-white hover:text-black"
+        className="relative z-20 mt-10 inline-flex items-center gap-3 rounded-full bg-white/15 px-6 py-3 text-base font-medium text-white transition hover:bg-white hover:text-black"
       >
-        Let&apos;s Work Together
+        Let's Work Together
         <span aria-hidden="true">→</span>
       </Link>
     </section>
