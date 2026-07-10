@@ -12,7 +12,7 @@ export function Hero() {
           Muskan
         </h1>
 
-        {/* Logo and supporting labels */}
+        {/* Logo */}
         <div className="relative z-10 w-full max-w-[760px]">
           <img
             src="/muskan-logo.png"
@@ -36,7 +36,8 @@ export function Hero() {
 
           {/* Supporting labels */}
           <div className="-mt-1 grid w-full grid-cols-2 items-start gap-6 px-[4%] text-left sm:-mt-2 sm:gap-10 md:-mt-3 md:px-0">
-            <p className="text-[1.25rem] font-normal leading-[0.88] tracking-[-0.045em] text-foreground sm:text-[1.6rem] md:text-[2rem]">
+            {/* Left */}
+            <p className="mt-3 text-[1.25rem] font-normal leading-[0.88] tracking-[-0.045em] text-foreground sm:text-[1.6rem] md:mt-5 md:text-[2rem]">
               Visual &amp;
               <br />
               Brand Identity
@@ -44,7 +45,8 @@ export function Hero() {
               Designer
             </p>
 
-            <p className="text-right text-[1.25rem] font-normal leading-[0.88] tracking-[-0.045em] text-foreground sm:text-[1.6rem] md:text-[2rem]">
+            {/* Right */}
+            <p className="-translate-x-8 text-right text-[1.25rem] font-normal leading-[0.88] tracking-[-0.045em] text-foreground sm:-translate-x-10 sm:text-[1.6rem] md:-translate-x-12 md:text-[2rem]">
               Emerging
               <br />
               designer
