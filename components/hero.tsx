@@ -19,20 +19,13 @@ export function Hero() {
     >
       <div className="relative mx-auto flex w-full max-w-[1500px] flex-col items-center text-center">
         {/* Name */}
-        <h1 className="relative z-20 mb-2 font-sans text-[4rem] font-normal leading-[0.84] tracking-[-0.065em] text-foreground sm:mb-3 sm:text-[5rem] md:mb-4 md:text-[6rem] lg:text-[7rem]">
+        <h1 className="relative z-20 -mb-8 font-sans text-[4rem] font-normal leading-[0.84] tracking-[-0.065em] text-foreground sm:-mb-10 sm:text-[5rem] md:-mb-14 md:text-[6rem] lg:text-[7rem]">
           Muskan
         </h1>
 
         {/* Portrait clipped inside actual logo */}
         <div className="group relative z-10 w-[112%] max-w-none sm:w-[105%] md:w-[92vw] lg:w-[88vw] xl:w-[1120px]">
           <div className="relative aspect-[2.3/1] w-full">
-            {/* Soft offset logo shadow */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 translate-x-3 translate-y-3 bg-blue-brand/12 transition-transform duration-700 ease-out group-hover:translate-x-4 group-hover:translate-y-4"
-              style={logoMaskStyle}
-            />
-
             {/* Main masked portrait */}
             <div
               role="img"
@@ -44,21 +37,21 @@ export function Hero() {
                 src="/muskan-original.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute left-1/2 top-1/2 h-[50%] w-auto max-w-none -translate-x-1/2 -translate-y-[46%] object-contain transition-transform duration-700 ease-out group-hover:-translate-y-[48%] group-hover:scale-[1.015]"
+                className="absolute inset-0 h-full w-full scale-[1.08] object-cover object-[center_42%] transition-transform duration-700 ease-out group-hover:scale-[1.12]"
               />
             </div>
 
-            {/* Brand blue overlay */}
+            {/* Light brand-blue tint */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-blue-brand/18 transition-colors duration-700 group-hover:bg-blue-brand/12"
+              className="pointer-events-none absolute inset-0 bg-blue-brand/12 transition-colors duration-700 group-hover:bg-blue-brand/8"
               style={logoMaskStyle}
             />
 
             {/* Soft highlight */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/18 via-transparent to-blue-brand/8"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/12 via-transparent to-transparent"
               style={logoMaskStyle}
             />
           </div>
