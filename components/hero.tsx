@@ -28,21 +28,19 @@ export function Hero() {
         className="pointer-events-none absolute bottom-10 right-0 h-72 w-72 rounded-full bg-lilac-brand/8 blur-[130px]"
       />
 
-      <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center text-center">
+      <div className="relative mx-auto flex w-full max-w-[1500px] flex-col items-center text-center">
         {/* Name */}
         <h1 className="relative z-20 font-sans text-[4.8rem] font-normal leading-[0.85] tracking-[-0.065em] text-foreground sm:text-[6rem] md:text-[7.5rem] lg:text-[8.5rem]">
           Muskan
         </h1>
 
         {/* Portrait clipped inside actual logo */}
-
-        <div className="group relative z-10 mt-0 w-full max-w-[980px] sm:max-w-[1100px] md:max-w-[1280px] lg:max-w-[1380px]">
+        <div className="group relative z-10 -mt-1 w-[115%] max-w-none sm:w-[108%] md:-mt-4 md:w-[96vw] lg:w-[92vw] xl:w-[1200px]">
           <div className="relative aspect-[2.8/1] w-full">
-          
             {/* Soft offset logo shadow */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 translate-x-2 translate-y-3 bg-blue-brand/12 transition-transform duration-700 ease-out group-hover:translate-x-3 group-hover:translate-y-4"
+              className="pointer-events-none absolute inset-0 translate-x-3 translate-y-4 bg-blue-brand/12 transition-transform duration-700 ease-out group-hover:translate-x-4 group-hover:translate-y-5"
               style={logoMaskStyle}
             />
 
@@ -53,20 +51,20 @@ export function Hero() {
               className="absolute inset-0 overflow-hidden"
               style={logoMaskStyle}
             >
-              {/* Background fills the complete logo shape */}
+              {/* Background fills the complete logo */}
               <img
                 src="/muskan-original.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute inset-0 h-full w-full scale-110 object-cover object-[center_45%] blur-[1px] transition-transform duration-700 ease-out group-hover:scale-[1.15]"
+                className="absolute inset-0 h-full w-full scale-[1.04] object-cover object-[center_46%] blur-[0.5px] transition-transform duration-700 ease-out group-hover:scale-[1.08]"
               />
 
-              {/* Clear Muskan portrait above the background */}
+              {/* Clear Muskan portrait */}
               <img
                 src="/muskan-original.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute left-1/2 top-1/2 h-[96%] w-auto max-w-none -translate-x-1/2 -translate-y-[42%] object-contain transition-transform duration-700 ease-out group-hover:-translate-y-[44%] group-hover:scale-[1.02]"
+                className="absolute left-1/2 top-1/2 h-[92%] w-auto max-w-none -translate-x-1/2 -translate-y-[40%] object-contain transition-transform duration-700 ease-out group-hover:-translate-y-[42%] group-hover:scale-[1.02]"
               />
             </div>
 
@@ -87,7 +85,7 @@ export function Hero() {
         </div>
 
         {/* Supporting labels */}
-        <div className="-mt-1 grid w-full max-w-[700px] grid-cols-2 gap-10 text-left sm:gap-20 md:-mt-2">
+        <div className="-mt-3 grid w-full max-w-[700px] grid-cols-2 gap-10 text-left sm:gap-20 md:-mt-8">
           <p className="text-[1.45rem] font-normal leading-[0.88] tracking-[-0.045em] text-foreground sm:text-[1.75rem] md:text-[2rem]">
             Visual &amp;
             <br />
@@ -117,6 +115,7 @@ export function Hero() {
             className="group inline-flex min-h-16 items-center justify-center gap-3 rounded-xl border border-blue-brand bg-blue-brand px-8 text-lg font-normal text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(108,147,255,0.25)] md:text-xl"
           >
             <span>View Projects</span>
+
             <span
               aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
@@ -130,6 +129,7 @@ export function Hero() {
             className="group inline-flex min-h-16 items-center justify-center gap-3 rounded-xl border border-foreground bg-foreground px-8 text-lg font-normal text-background shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(40,38,33,0.18)] md:text-xl"
           >
             <span>Let&apos;s Work together!</span>
+
             <span
               aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
