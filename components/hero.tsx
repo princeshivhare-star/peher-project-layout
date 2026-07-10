@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-background px-5 pb-10 pt-16 md:px-8 md:pb-14 md:pt-20"
+      className="relative overflow-hidden bg-background px-5 pb-4 pt-10 md:px-8 md:pb-8 md:pt-12"
     >
       {/* Soft background accents */}
       <div
@@ -64,8 +64,7 @@ export function Hero() {
                 src="/muskan-original.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute left-1/2 top-1/2 h-[78%] w-auto max-w-none -translate-x-1/2 -translate-y-[39%] object-contain transition-transform duration-700 ease-out group-hover:-translate-y-[41%] group-hover:scale-[1.015]"
-              />
+                className="absolute left-1/2 top-1/2 h-[66%] w-auto max-w-none -translate-x-1/2 -translate-y-[34%] object-contain transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             </div>
 
             {/* Brand blue overlay */}
