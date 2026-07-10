@@ -15,27 +15,27 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-background px-5 pb-4 pt-10 md:px-8 md:pb-8 md:pt-12"
+      className="relative overflow-hidden bg-background px-5 pb-4 pt-8 md:px-8 md:pb-6 md:pt-10"
     >
       {/* Soft background accents */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-0 top-16 h-64 w-64 rounded-full bg-blue-brand/8 blur-[120px]"
+        className="pointer-events-none absolute left-0 top-12 h-56 w-56 rounded-full bg-blue-brand/8 blur-[110px]"
       />
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-8 right-0 h-64 w-64 rounded-full bg-lilac-brand/8 blur-[120px]"
+        className="pointer-events-none absolute bottom-4 right-0 h-56 w-56 rounded-full bg-lilac-brand/8 blur-[110px]"
       />
 
       <div className="relative mx-auto flex w-full max-w-[1500px] flex-col items-center text-center">
         {/* Name */}
-        <h1 className="relative z-20 font-sans text-[4.4rem] font-normal leading-[0.84] tracking-[-0.065em] text-foreground sm:text-[5.5rem] md:text-[6.8rem] lg:text-[7.8rem]">
+        <h1 className="relative z-20 font-sans text-[4rem] font-normal leading-[0.84] tracking-[-0.065em] text-foreground sm:text-[5rem] md:text-[6rem] lg:text-[7rem]">
           Muskan
         </h1>
 
         {/* Portrait clipped inside actual logo */}
-        <div className="group relative z-10 -mt-3 w-[112%] max-w-none sm:w-[105%] md:-mt-6 md:w-[92vw] lg:w-[88vw] xl:w-[1120px]">
+        <div className="group relative z-10 -mt-8 w-[112%] max-w-none sm:w-[105%] md:-mt-12 md:w-[92vw] lg:w-[88vw] xl:w-[1120px]">
           <div className="relative aspect-[2.3/1] w-full">
             {/* Soft offset logo shadow */}
             <div
@@ -56,7 +56,7 @@ export function Hero() {
                 src="/muskan-original.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute inset-0 h-full w-full scale-[0.96] object-cover object-[center_48%] blur-[0.5px] transition-transform duration-700 ease-out group-hover:scale-[1]"
+                className="absolute inset-0 h-full w-full scale-[0.9] object-cover object-[center_50%] blur-[0.5px] transition-transform duration-700 ease-out group-hover:scale-[0.94]"
               />
 
               {/* Clear Muskan portrait */}
@@ -64,7 +64,8 @@ export function Hero() {
                 src="/muskan-original.png"
                 alt=""
                 aria-hidden="true"
-                className="absolute left-1/2 top-1/2 h-[66%] w-auto max-w-none -translate-x-1/2 -translate-y-[34%] object-contain transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                className="absolute left-1/2 top-1/2 h-[56%] w-auto max-w-none -translate-x-1/2 -translate-y-[30%] object-contain transition-transform duration-700 ease-out group-hover:-translate-y-[32%] group-hover:scale-[1.015]"
+              />
             </div>
 
             {/* Brand blue overlay */}
@@ -84,8 +85,8 @@ export function Hero() {
         </div>
 
         {/* Supporting labels */}
-        <div className="-mt-8 grid w-full max-w-[700px] grid-cols-2 gap-10 text-left sm:gap-20 md:-mt-12">
-          <p className="text-[1.3rem] font-normal leading-[0.9] tracking-[-0.04em] text-foreground sm:text-[1.6rem] md:text-[1.85rem]">
+        <div className="-mt-20 grid w-full max-w-[700px] grid-cols-2 gap-10 text-left sm:gap-20 md:-mt-28">
+          <p className="text-[1.2rem] font-normal leading-[0.9] tracking-[-0.04em] text-foreground sm:text-[1.45rem] md:text-[1.7rem]">
             Visual &amp;
             <br />
             Brand Identity
@@ -93,7 +94,7 @@ export function Hero() {
             Designer
           </p>
 
-          <p className="text-right text-[1.3rem] font-normal leading-[0.9] tracking-[-0.04em] text-foreground sm:text-[1.6rem] md:text-[1.85rem]">
+          <p className="text-right text-[1.2rem] font-normal leading-[0.9] tracking-[-0.04em] text-foreground sm:text-[1.45rem] md:text-[1.7rem]">
             Emerging
             <br />
             designer
@@ -101,17 +102,17 @@ export function Hero() {
         </div>
 
         {/* Introduction */}
-        <p className="mt-5 max-w-[650px] font-dribelland text-[1.95rem] font-normal leading-[0.82] tracking-normal text-foreground sm:text-[2.35rem] md:text-[2.8rem]">
+        <p className="mt-1 max-w-[620px] font-dribelland text-[1.8rem] font-normal leading-[0.8] tracking-normal text-foreground sm:text-[2.15rem] md:text-[2.55rem]">
           I turn smart ideas into brands
           <br className="hidden sm:block" />
           people notice, trust and choose.
         </p>
 
         {/* Buttons */}
-        <div className="mt-7 grid w-full max-w-[620px] grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+        <div className="mt-4 grid w-full max-w-[590px] grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-5">
           <Link
             href="/#projects"
-            className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-xl border border-blue-brand bg-blue-brand px-7 text-base font-normal text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(108,147,255,0.22)] md:text-lg"
+            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border border-blue-brand bg-blue-brand px-6 text-base font-normal text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(108,147,255,0.22)] md:text-lg"
           >
             <span>View Projects</span>
 
@@ -125,7 +126,7 @@ export function Hero() {
 
           <Link
             href="/#contact"
-            className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-xl border border-foreground bg-foreground px-7 text-base font-normal text-background shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(40,38,33,0.16)] md:text-lg"
+            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border border-foreground bg-foreground px-6 text-base font-normal text-background shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(40,38,33,0.16)] md:text-lg"
           >
             <span>Let&apos;s Work together!</span>
 
