@@ -1,16 +1,5 @@
 import Link from 'next/link'
 
-const logoMaskStyle = {
-  WebkitMaskImage: "url('/logo.png')",
-  maskImage: "url('/logo.png')",
-  WebkitMaskRepeat: 'no-repeat',
-  maskRepeat: 'no-repeat',
-  WebkitMaskPosition: 'center',
-  maskPosition: 'center',
-  WebkitMaskSize: 'contain',
-  maskSize: 'contain',
-} as const
-
 export function Hero() {
   return (
     <section
@@ -23,42 +12,17 @@ export function Hero() {
           Muskan
         </h1>
 
-        {/* Portrait clipped inside actual logo */}
-        <div className="group relative z-10 -mt-10 w-[112%] max-w-none sm:-mt-14 sm:w-[105%] md:-mt-20 md:w-[92vw] lg:-mt-24 lg:w-[88vw] xl:w-[1120px]">
-          <div className="relative aspect-[2.3/1] w-full">
-            {/* Main masked portrait */}
-            <div
-              role="img"
-              aria-label="Muskan Varotaria portrait clipped inside the brand logo"
-              className="absolute inset-0 overflow-hidden"
-              style={logoMaskStyle}
-            >
-              <img
-                src="/muskan-original.png"
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full object-cover object-[center_44%] transition-transform duration-700 ease-out group-hover:scale-[1.015]"
-              />
-            </div>
-
-            {/* Brand blue overlay */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-blue-brand/18 transition-colors duration-700 group-hover:bg-blue-brand/12"
-              style={logoMaskStyle}
-            />
-
-            {/* Soft highlight */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/18 via-transparent to-blue-brand/8"
-              style={logoMaskStyle}
-            />
-          </div>
+        {/* Muskan logo image */}
+        <div className="relative z-10 -mt-8 flex w-full justify-center sm:-mt-10 md:-mt-12 lg:-mt-14">
+          <img
+            src="/muskan-logo.png"
+            alt="Muskan portrait inside the brand logo"
+            className="h-auto w-[95%] max-w-[760px] object-contain transition-transform duration-700 ease-out hover:scale-[1.015] sm:w-[82%] md:w-[70%] lg:w-[620px]"
+          />
         </div>
 
         {/* Supporting labels */}
-        <div className="-mt-20 grid w-full max-w-[700px] grid-cols-2 gap-10 text-left sm:gap-20 md:-mt-28">
+        <div className="-mt-8 grid w-full max-w-[700px] grid-cols-2 gap-10 text-left sm:-mt-10 sm:gap-20 md:-mt-12">
           <p className="text-[1.2rem] font-normal leading-[0.9] tracking-[-0.04em] text-foreground sm:text-[1.45rem] md:text-[1.7rem]">
             Visual &amp;
             <br />
