@@ -1,10 +1,21 @@
 import Link from 'next/link'
 
+const logoMaskStyle = {
+  WebkitMaskImage: "url('/logo.png')",
+  maskImage: "url('/logo.png')",
+  WebkitMaskRepeat: 'no-repeat',
+  maskRepeat: 'no-repeat',
+  WebkitMaskPosition: 'center',
+  maskPosition: 'center',
+  WebkitMaskSize: 'contain',
+  maskSize: 'contain',
+} as const
+
 export function Hero() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-background px-5 pt-24 pb-16 md:px-8 md:pt-32 md:pb-24"
+      className="relative overflow-hidden bg-background px-5 pb-16 pt-24 md:px-8 md:pb-24 md:pt-32"
     >
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
         {/* Name */}
@@ -12,38 +23,30 @@ export function Hero() {
           Muskan
         </h1>
 
-        {/* Image clipped inside logo mark */}
+        {/* Portrait clipped inside the real logo */}
         <div className="-mt-1 w-full max-w-[560px] md:-mt-3 md:max-w-[650px]">
-          <svg
-            viewBox="0 0 720 300"
-            role="img"
-            aria-label="Muskan Varotaria portrait clipped inside the brand mark"
-            className="h-auto w-full"
-          >
-            <defs>
-              <clipPath id="muskan-logo-clip">
-                <path d="M35 245L150 65H300L235 150L320 65H455L390 150L475 65H685L565 245H420L485 155L395 245H260L325 155L235 245H35Z" />
-              </clipPath>
-            </defs>
+          <div className="relative aspect-[2.8/1] w-full">
+            {/* Original photograph clipped by logo.png */}
+            <div
+              className="absolute inset-0 overflow-hidden"
+              style={logoMaskStyle}
+              role="img"
+              aria-label="Muskan Varotaria portrait clipped inside the brand logo"
+            >
+              <img
+                src="/muskan-original.png"
+                alt=""
+                className="h-full w-full scale-[1.2] object-cover object-[center_44%]"
+              />
+            </div>
 
-            {/* Original image */}
-            <image
-              href="/muskan-original.png"
-              x="0"
-              y="-115"
-              width="720"
-              height="540"
-              preserveAspectRatio="xMidYMid slice"
-              clipPath="url(#muskan-logo-clip)"
+            {/* Same logo shape with lowered blue opacity */}
+            <div
+              className="pointer-events-none absolute inset-0 bg-blue-brand/25"
+              style={logoMaskStyle}
+              aria-hidden="true"
             />
-
-            {/* Same shape with brand-blue overlay */}
-            <path
-              d="M35 245L150 65H300L235 150L320 65H455L390 150L475 65H685L565 245H420L485 155L395 245H260L325 155L235 245H35Z"
-              fill="var(--blue-brand)"
-              opacity="0.28"
-            />
-          </svg>
+          </div>
         </div>
 
         {/* Supporting labels */}
