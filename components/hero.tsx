@@ -114,6 +114,7 @@ export function Hero() {
                   mx-auto
                   mt-8
                   w-full
+                  -translate-x-2
                   text-center
                   font-[family-name:var(--font-neue-haas)]
                   text-[1.1rem]
@@ -121,7 +122,9 @@ export function Hero() {
                   leading-[1.35]
                   tracking-[-0.025em]
                   text-foreground
+                  sm:-translate-x-3
                   sm:text-[1.25rem]
+                  lg:-translate-x-4
                   lg:mt-9
                   lg:text-[1.35rem]
                   xl:text-[1.45rem]
@@ -157,7 +160,7 @@ export function Hero() {
         </div>
 
         {/* Buttons */}
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4 lg:mt-10">
+        <div className="mt-8 flex -translate-x-2 flex-col gap-3 sm:-translate-x-3 sm:flex-row sm:gap-4 lg:-translate-x-4 lg:mt-10">
           <Link
             href="/#projects"
             className="group inline-flex h-12 items-center justify-center gap-3 rounded-md border border-blue-brand bg-blue-brand px-7 font-sans text-sm font-normal text-white shadow-[0_10px_28px_rgba(108,147,255,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(108,147,255,0.25)] md:text-base"
