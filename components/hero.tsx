@@ -37,38 +37,33 @@ export function Hero() {
             Designer
           </p>
 
-          {/* Headline + logo share one shrink-wrapped box, sized to the
-              headline's own rendered width — the crop box below forces
-              the VISIBLE artwork (not just the file's own edges) to align
-              with the headline's boundaries */}
+          {/* Headline sets the width of this shrink-wrapped box; the logo
+              below is sized as a PERCENTAGE of that width and centered,
+              so it reads as a smaller mark under the name rather than
+              stretching edge-to-edge with "Muskan" */}
           <div className="mx-auto w-fit">
             <h1 className="whitespace-nowrap font-sans text-[3.8rem] font-normal leading-[0.78] tracking-[-0.01em] text-foreground sm:text-[5rem] md:text-[6rem] lg:text-[7.2rem] xl:text-[8.5rem]">
               Muskan
             </h1>
 
-            {/* Crop box: clips off any transparent padding baked into the
-                source PNG so the logo's true edges — not the file's edges —
-                line up with "Muskan" above. Adjust the scale value on the
-                img below once you preview against the actual asset. */}
-            <div className="mt-2 w-full overflow-hidden">
-              <img
-                src="/muskan-logo.png"
-                alt="Muskan portrait inside the brand logo"
-                className="
-                  h-auto
-                  w-full
-                  scale-[1.12]
-                  object-contain
-                  mix-blend-multiply
-                  contrast-[1.04]
-                  saturate-[1.03]
-                  transition-transform
-                  duration-700
-                  ease-out
-                  hover:scale-[1.135]
-                "
-              />
-            </div>
+            <img
+              src="/muskan-logo.png"
+              alt="Muskan portrait inside the brand logo"
+              className="
+                mx-auto
+                mt-2
+                h-auto
+                w-[70%]
+                object-contain
+                mix-blend-multiply
+                contrast-[1.04]
+                saturate-[1.03]
+                transition-transform
+                duration-700
+                ease-out
+                hover:scale-[1.03]
+              "
+            />
           </div>
         </div>
 
