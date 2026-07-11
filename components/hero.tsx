@@ -22,15 +22,18 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-6">
           {/* Left content */}
           <div className="relative z-20 flex flex-col items-start text-left lg:translate-x-4 xl:translate-x-6">
-            {/* Shared alignment boundary */}
+            {/* Shared alignment boundary — every block below shares this exact width,
+                so left/right edges line up the same way they do in the reference */}
             <div className="w-full lg:w-[570px] xl:w-[610px]">
               {/* Name */}
               <h1 className="font-sans text-[4.5rem] font-normal leading-[0.78] tracking-[-0.07em] text-foreground sm:text-[6rem] md:text-[7rem] lg:text-[8.5rem] xl:text-[10rem]">
                 Muskan
               </h1>
 
-              {/* Labels */}
-              <div className="mt-7 flex w-full items-start">
+              {/* Labels — justify-between on the SAME width box as the paragraph
+                  below, so "Emerging designer" lands on the identical right edge
+                  as "...help your business become the obvious choice." */}
+              <div className="mt-7 flex w-full items-start justify-between">
                 <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
                   Visual &amp;
                   <br />
@@ -39,7 +42,7 @@ export function Hero() {
                   Designer
                 </p>
 
-                <p className="ml-auto -translate-x-28 text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem] xl:-translate-x-32">
+                <p className="text-right text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem] xl:text-[2rem]">
                   Emerging
                   <br />
                   designer
