@@ -54,7 +54,7 @@ export function Hero() {
             {/* Paragraph + buttons keep their own fixed-width box for wrapping/layout */}
             <div className="w-full lg:w-[500px] xl:w-[530px]">
               {/* Introduction */}
-              <p className="mt-10 w-full font-dribelland text-[1.5rem] font-normal leading-[0.72] tracking-normal text-foreground sm:text-[1.7rem] lg:mt-12 lg:text-[1.8rem] xl:text-[1.85rem]">
+              <p className="mt-14 w-full font-dribelland text-[1.5rem] font-normal leading-[0.72] tracking-normal text-foreground sm:text-[1.7rem] lg:mt-16 lg:text-[1.8rem] xl:text-[1.85rem]">
                 <span className="hidden whitespace-nowrap lg:block">
                   I turn ambitious ideas into memorable brands that
                 </span>
@@ -119,7 +119,7 @@ export function Hero() {
               className="
                 h-auto
                 w-full
-                max-w-[720px]
+                max-w-[690px]
                 object-contain
                 mix-blend-multiply
                 contrast-[1.04]
@@ -129,9 +129,9 @@ export function Hero() {
                 ease-out
                 hover:scale-[1.015]
                 lg:w-[118%]
-                lg:max-w-[800px]
+                lg:max-w-[760px]
                 xl:w-[125%]
-                xl:max-w-[880px]
+                xl:max-w-[830px]
               "
             />
           </div>
