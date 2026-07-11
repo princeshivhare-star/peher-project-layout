@@ -105,16 +105,15 @@ export function Hero() {
               </div>
 
               {/*
-                Description — no longer inherits the logo's 60% wrapper width.
-                It gets its own tight max-width so it hugs the visible logo
-                artwork instead of stretching to the wrapper's full box
-                (which includes transparent padding around the flower letters).
+                Description — width matches the logo/wrapper exactly (no
+                separate max-width), so its left and right edges line up
+                flush with the logo's outer edges, uniform on both sides.
               */}
               <p
                 className="
                   mx-auto
                   mt-8
-                  max-w-[280px]
+                  w-full
                   text-center
                   font-[family-name:var(--font-neue-haas)]
                   text-[1.1rem]
@@ -122,12 +121,9 @@ export function Hero() {
                   leading-[1.35]
                   tracking-[-0.025em]
                   text-foreground
-                  sm:max-w-[340px]
                   sm:text-[1.25rem]
                   lg:mt-9
-                  lg:max-w-[440px]
                   lg:text-[1.35rem]
-                  xl:max-w-[490px]
                   xl:text-[1.45rem]
                 "
               >
