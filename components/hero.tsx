@@ -1,179 +1,66 @@
-// hero.tsx
 import Link from 'next/link'
 
 export function Hero() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#F8F6F1] px-5 py-9 sm:px-8 md:py-11 lg:min-h-[600px] lg:px-12 lg:py-10"
+      className="font-stack-sans relative overflow-hidden bg-background px-5 pb-14 pt-20 text-foreground md:px-8 md:pb-20 md:pt-28 lg:min-h-[595px] lg:px-0 lg:pt-[82px]"
     >
-      {/* Soft background accents */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-      >
-        <div className="absolute left-[22%] top-0 h-[420px] w-[620px] rounded-full bg-white/75 blur-3xl" />
-        <div className="absolute -left-24 top-48 h-72 w-72 rounded-full bg-blue-brand/5 blur-3xl" />
-        <div className="absolute -right-24 top-40 h-80 w-80 rounded-full bg-[#D9D0EA]/20 blur-3xl" />
-      </div>
-
-      <div className="relative mx-auto flex w-full max-w-[1550px] flex-col items-center px-0 text-center lg:px-12 xl:px-16">
-        <div className="relative w-full">
-          {/* Central Muskan block */}
-          <div className="mx-auto w-fit">
-            <h1 className="whitespace-nowrap font-sans text-[3.8rem] font-normal leading-[0.78] tracking-[-0.035em] text-foreground sm:text-[5rem] md:text-[6rem] lg:text-[7.2rem] xl:text-[8.5rem]">
-              Muskan
-            </h1>
-
-            {/* Logo and description wrapper */}
-            <div className="mx-auto mt-4 w-[64%] sm:w-[62%] lg:mt-5 lg:w-[60%]">
-              {/* Logo with side labels */}
-              <div className="relative w-full">
-                <img
-                  src="/muskan-logo.png"
-                  alt="Muskan portrait inside the brand logo"
-                  className="
-                    block
-                    h-auto
-                    w-full
-                    object-contain
-                    mix-blend-multiply
-                    contrast-[1.04]
-                    saturate-[1.03]
-                    transition-transform
-                    duration-700
-                    ease-out
-                    hover:scale-[1.02]
-                  "
-                />
-
-                {/* Left desktop label */}
-                <p
-                  className="
-                    absolute
-                    bottom-0
-                    right-full
-                    mr-4
-                    hidden
-                    whitespace-nowrap
-                    text-left
-                    font-sans
-                    font-normal
-                    leading-[0.86]
-                    tracking-[-0.05em]
-                    text-foreground
-                    lg:block
-                    lg:text-[1.45rem]
-                    xl:mr-5
-                    xl:text-[1.65rem]
-                  "
-                >
-                  Visual &amp;
-                  <br />
-                  Brand Identity
-                  <br />
-                  Designer
-                </p>
-
-                {/* Right desktop label */}
-                <p
-                  className="
-                    absolute
-                    bottom-0
-                    left-full
-                    ml-4
-                    hidden
-                    whitespace-nowrap
-                    text-left
-                    font-sans
-                    font-normal
-                    leading-[0.86]
-                    tracking-[-0.05em]
-                    text-foreground
-                    lg:block
-                    lg:text-[1.45rem]
-                    xl:ml-5
-                    xl:text-[1.65rem]
-                  "
-                >
-                  Strategic
-                  <br />
-                  Emerging
-                  <br />
-                  Designer
-                </p>
-              </div>
-
-              {/*
-                Description — width matches the logo/wrapper exactly (no
-                separate max-width), so its left and right edges line up
-                flush with the logo's outer edges, uniform on both sides.
-              */}
-              <p
-                className="
-                  mx-auto
-                  mt-8
-                  w-full
-                  -translate-x-2
-                  text-center
-                  font-[family-name:var(--font-neue-haas)]
-                  text-[1.1rem]
-                  font-normal
-                  leading-[1.35]
-                  tracking-[-0.025em]
-                  text-foreground
-                  sm:-translate-x-3
-                  sm:text-[1.25rem]
-                  lg:-translate-x-4
-                  lg:mt-9
-                  lg:text-[1.35rem]
-                  xl:text-[1.45rem]
-                "
-              >
-                I turn ambitious ideas into memorable brands
-                <br />
-                that capture attention, earn trust and help
-                <br />
-                your business become the obvious choice.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile-only labels */}
-        <div className="mt-7 flex w-full justify-between gap-6 lg:hidden">
-          <p className="text-left font-sans text-[1.05rem] font-normal leading-[0.9] tracking-[-0.035em] text-foreground sm:text-[1.2rem]">
+      <div className="mx-auto grid w-full max-w-[923px] grid-cols-1 items-start lg:grid-cols-[268px_354px_301px]">
+        <div className="order-2 mt-7 flex justify-between gap-6 lg:order-1 lg:mt-[204px] lg:justify-start">
+          <p className="max-w-[150px] text-left text-[1.3rem] font-normal leading-[0.86] tracking-[-0.06em] text-foreground md:text-[1.55rem] lg:text-[1.32rem]">
             Visual &amp;
             <br />
             Brand Identity
             <br />
             Designer
           </p>
+        </div>
 
-          <p className="text-right font-sans text-[1.05rem] font-normal leading-[0.9] tracking-[-0.035em] text-foreground sm:text-[1.2rem]">
+        <div className="order-1 flex flex-col items-center text-center lg:order-2">
+          <h1 className="w-full text-left text-[4.5rem] font-normal leading-[0.78] tracking-[-0.055em] text-foreground sm:text-[6rem] md:text-[7.75rem] lg:text-[6.94rem]">
+            Muskan
+          </h1>
+
+          <img
+            src="/muskan-logo.png"
+            alt="Muskan portrait inside the brand logo"
+            className="mt-6 block h-auto w-full object-contain md:mt-7 lg:mt-6"
+          />
+
+          <p className="mt-5 w-full text-center text-[1.35rem] font-normal leading-[1.02] tracking-[-0.075em] text-foreground sm:text-[1.6rem] md:text-[1.85rem] lg:text-[1.34rem] lg:leading-[0.86]">
+            I turn ambitious ideas into memorable brands
+            <br />
+            that capture attention, earn trust and help
+            <br />
+            your business become the obvious choice.
+          </p>
+
+          <div className="mt-12 flex w-full max-w-[484px] flex-col justify-center gap-4 sm:flex-row md:mt-12 md:gap-7 lg:mt-[48px]">
+            <Link
+              href="/#projects"
+              className="inline-flex h-12 min-w-[210px] items-center justify-center rounded-[6px] border border-foreground bg-[#7293ff] px-8 text-lg font-normal tracking-[-0.04em] text-white shadow-[0_14px_34px_rgba(114,147,255,0.18)] transition-transform hover:-translate-y-1 lg:h-[46px] lg:min-w-[226px] lg:text-base"
+            >
+              View Projects
+            </Link>
+
+            <Link
+              href="/#contact"
+              className="inline-flex h-12 min-w-[230px] items-center justify-center rounded-[6px] border border-foreground bg-foreground px-8 text-lg font-normal tracking-[-0.04em] text-background shadow-[0_14px_34px_rgba(23,17,14,0.12)] transition-transform hover:-translate-y-1 lg:h-[46px] lg:min-w-[226px] lg:text-base"
+            >
+              Let&apos;s Work together!
+            </Link>
+          </div>
+        </div>
+
+        <div className="order-3 hidden lg:mt-[204px] lg:block lg:pl-[222px]">
+          <p className="max-w-[150px] text-left text-[1.32rem] font-normal leading-[0.86] tracking-[-0.06em] text-foreground">
             Strategic
             <br />
             Emerging
             <br />
             Designer
           </p>
-        </div>
-
-        {/* Buttons */}
-        <div className="mt-8 flex -translate-x-2 flex-col gap-3 sm:-translate-x-3 sm:flex-row sm:gap-4 lg:-translate-x-4 lg:mt-10">
-          <Link
-            href="/#projects"
-            className="group inline-flex h-12 items-center justify-center gap-3 rounded-md border border-blue-brand bg-blue-brand px-7 font-sans text-sm font-normal text-white shadow-[0_10px_28px_rgba(108,147,255,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(108,147,255,0.25)] md:text-base"
-          >
-            <span>View Projects</span>
-          </Link>
-
-          <Link
-            href="/#contact"
-            className="group inline-flex h-12 items-center justify-center gap-3 rounded-md border border-foreground bg-foreground px-7 font-sans text-sm font-normal text-background shadow-[0_10px_28px_rgba(40,38,33,0.12)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(40,38,33,0.18)] md:text-base"
-          >
-            <span>Let&apos;s Work together!</span>
-          </Link>
         </div>
       </div>
     </section>
