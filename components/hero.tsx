@@ -22,10 +22,7 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-6">
           {/* Left content */}
           <div className="relative z-20 flex flex-col items-start text-left lg:translate-x-4 xl:translate-x-6">
-            {/*
-              Shared boundary:
-              Heading, labels, description and buttons all use this width.
-            */}
+            {/* Shared alignment boundary */}
             <div className="w-full lg:w-[570px] xl:w-[610px]">
               {/* Name */}
               <h1 className="font-sans text-[4.5rem] font-normal leading-[0.78] tracking-[-0.07em] text-foreground sm:text-[6rem] md:text-[7rem] lg:text-[8.5rem] xl:text-[10rem]">
@@ -33,22 +30,16 @@ export function Hero() {
               </h1>
 
               {/* Labels */}
-<div className="mt-7 flex w-full items-start">
-  <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
-    Visual &amp;
-    <br />
-    Brand Identity
-    <br />
-    Designer
-  </p>
+              <div className="mt-7 flex w-full items-start">
+                <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
+                  Visual &amp;
+                  <br />
+                  Brand Identity
+                  <br />
+                  Designer
+                </p>
 
-  <p className="ml-[250px] text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
-    Emerging
-    <br />
-    designer
-  </p>
-</div>
-                <p className="text-right text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
+                <p className="ml-auto -translate-x-10 text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem] xl:-translate-x-12">
                   Emerging
                   <br />
                   designer
@@ -57,7 +48,7 @@ export function Hero() {
 
               {/* Introduction */}
               <p className="mt-10 w-full font-dribelland text-[1.75rem] font-normal leading-[0.94] tracking-normal text-foreground sm:text-[2rem] lg:mt-12 lg:text-[2.05rem] xl:text-[2.15rem]">
-                <span className="hidden lg:block whitespace-nowrap">
+                <span className="hidden whitespace-nowrap lg:block">
                   I turn ambitious ideas into memorable brands that
                 </span>
 
@@ -67,7 +58,7 @@ export function Hero() {
 
                 <br />
 
-                <span className="hidden lg:block whitespace-nowrap">
+                <span className="hidden whitespace-nowrap lg:block">
                   capture attention, earn trust and help your business
                 </span>
 
