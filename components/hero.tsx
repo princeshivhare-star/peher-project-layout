@@ -25,89 +25,117 @@ export function Hero() {
               Muskan
             </h1>
 
-            {/* Logo with side labels */}
-            <div className="relative mx-auto mt-4 w-[64%] sm:w-[62%] lg:mt-5 lg:w-[60%]">
-              <img
-                src="/muskan-logo.png"
-                alt="Muskan portrait inside the brand logo"
-                className="
-                  block
-                  h-auto
-                  w-full
-                  object-contain
-                  mix-blend-multiply
-                  contrast-[1.04]
-                  saturate-[1.03]
-                  transition-transform
-                  duration-700
-                  ease-out
-                  hover:scale-[1.02]
-                "
-              />
+            {/* Logo and description wrapper */}
+            <div className="mx-auto mt-4 w-[64%] sm:w-[62%] lg:mt-5 lg:w-[60%]">
+              {/* Logo with side labels */}
+              <div className="relative w-full">
+                <img
+                  src="/muskan-logo.png"
+                  alt="Muskan portrait inside the brand logo"
+                  className="
+                    block
+                    h-auto
+                    w-full
+                    object-contain
+                    mix-blend-multiply
+                    contrast-[1.04]
+                    saturate-[1.03]
+                    transition-transform
+                    duration-700
+                    ease-out
+                    hover:scale-[1.02]
+                  "
+                />
 
-              {/* Left desktop label */}
+                {/* Left desktop label */}
+                <p
+                  className="
+                    absolute
+                    bottom-0
+                    right-full
+                    mr-4
+                    hidden
+                    whitespace-nowrap
+                    text-left
+                    font-sans
+                    font-normal
+                    leading-[0.86]
+                    tracking-[-0.05em]
+                    text-foreground
+                    lg:block
+                    lg:text-[1.45rem]
+                    xl:mr-5
+                    xl:text-[1.65rem]
+                  "
+                >
+                  Visual &amp;
+                  <br />
+                  Brand Identity
+                  <br />
+                  Designer
+                </p>
+
+                {/* Right desktop label */}
+                <p
+                  className="
+                    absolute
+                    bottom-0
+                    left-full
+                    ml-4
+                    hidden
+                    whitespace-nowrap
+                    text-left
+                    font-sans
+                    font-normal
+                    leading-[0.86]
+                    tracking-[-0.05em]
+                    text-foreground
+                    lg:block
+                    lg:text-[1.45rem]
+                    xl:ml-5
+                    xl:text-[1.65rem]
+                  "
+                >
+                  Strategic
+                  <br />
+                  Emerging
+                  <br />
+                  Designer
+                </p>
+              </div>
+
+              {/*
+                Description — no longer inherits the logo's 60% wrapper width.
+                It gets its own tight max-width so it hugs the visible logo
+                artwork instead of stretching to the wrapper's full box
+                (which includes transparent padding around the flower letters).
+              */}
               <p
                 className="
-                  absolute
-                  bottom-0
-                  right-full
-                  mr-4
-                  hidden
-                  whitespace-nowrap
-                  text-left
+                  mx-auto
+                  mt-8
+                  max-w-[280px]
+                  text-center
                   font-sans
+                  text-[1.1rem]
                   font-normal
-                  leading-[0.86]
-                  tracking-[-0.05em]
+                  leading-[1.35]
+                  tracking-[-0.025em]
                   text-foreground
-                  lg:block
-                  lg:text-[1.45rem]
-                  xl:mr-5
-                  xl:text-[1.65rem]
+                  sm:max-w-[340px]
+                  sm:text-[1.25rem]
+                  lg:mt-9
+                  lg:max-w-[440px]
+                  lg:text-[1.35rem]
+                  xl:max-w-[490px]
+                  xl:text-[1.45rem]
                 "
               >
-                Visual &amp;
+                I turn ambitious ideas into memorable brands
                 <br />
-                Brand Identity
+                that capture attention, earn trust and help
                 <br />
-                Designer
-              </p>
-
-              {/* Right desktop label */}
-              <p
-                className="
-                  absolute
-                  bottom-0
-                  left-full
-                  ml-4
-                  hidden
-                  whitespace-nowrap
-                  text-left
-                  font-sans
-                  font-normal
-                  leading-[0.86]
-                  tracking-[-0.05em]
-                  text-foreground
-                  lg:block
-                  lg:text-[1.45rem]
-                  xl:ml-5
-                  xl:text-[1.65rem]
-                "
-              >
-                Strategic
-                <br />
-                Emerging
-                <br />
-                Designer
-              </p>
-            </div>
-
-            {/* Description — same exact width as Muskan heading */}
-            <div className="mt-8 w-full lg:mt-9">
-              <p className="w-full text-center font-sans text-[1.1rem] font-normal leading-[1.35] tracking-[-0.025em] text-foreground sm:text-[1.25rem] lg:text-[1.35rem] xl:text-[1.45rem]">
-                I turn ambitious ideas into memorable brands that capture
-                attention, earn trust and help your business become the obvious
-                choice.
+                your business become the obvious choice.
               </p>
             </div>
           </div>
