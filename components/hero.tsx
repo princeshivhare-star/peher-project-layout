@@ -39,7 +39,7 @@ export function Hero() {
                   Designer
                 </p>
 
-                <p className="ml-auto -translate-x-20 text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem] xl:-translate-x-24">
+                <p className="ml-auto -translate-x-28 text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem] xl:-translate-x-32">
                   Emerging
                   <br />
                   designer
