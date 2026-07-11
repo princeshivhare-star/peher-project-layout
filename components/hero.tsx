@@ -33,15 +33,21 @@ export function Hero() {
               </h1>
 
               {/* Labels */}
-              <div className="mt-7 flex w-full items-start justify-between">
-                <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
-                  Visual &amp;
-                  <br />
-                  Brand Identity
-                  <br />
-                  Designer
-                </p>
+<div className="mt-7 flex w-full items-start">
+  <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
+    Visual &amp;
+    <br />
+    Brand Identity
+    <br />
+    Designer
+  </p>
 
+  <p className="ml-[250px] text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
+    Emerging
+    <br />
+    designer
+  </p>
+</div>
                 <p className="text-right text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
                   Emerging
                   <br />
