@@ -1,4 +1,3 @@
-
 // hero.tsx
 import Link from 'next/link'
 
@@ -103,9 +102,9 @@ export function Hero() {
               </p>
             </div>
 
-            {/* Description directly below the logo */}
-            <div className="mt-8 w-0 min-w-full lg:mt-9">
-              <p className="text-center font-sans text-[1.1rem] font-normal leading-[1.35] tracking-[-0.025em] text-foreground sm:text-[1.25rem] lg:text-[1.35rem] xl:text-[1.45rem]">
+            {/* Description — same exact width as Muskan heading */}
+            <div className="mt-8 w-full lg:mt-9">
+              <p className="w-full text-center font-sans text-[1.1rem] font-normal leading-[1.35] tracking-[-0.025em] text-foreground sm:text-[1.25rem] lg:text-[1.35rem] xl:text-[1.45rem]">
                 I turn ambitious ideas into memorable brands that capture
                 attention, earn trust and help your business become the obvious
                 choice.
@@ -153,4 +152,3 @@ export function Hero() {
     </section>
   )
 }
-
