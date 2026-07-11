@@ -1,3 +1,4 @@
+// page.tsx
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { Hero } from '@/components/hero'
@@ -18,42 +19,26 @@ export default function HomePage() {
 
         {/* Main positioning statement */}
         <section className="mx-auto flex justify-center px-6 py-12 md:px-10 md:py-16">
-          <h2 className="mx-auto max-w-[920px] text-center text-[1.2rem] font-semibold leading-[1.02] tracking-[-0.04em] md:text-[2rem] lg:text-[2.65rem] xl:text-[2.95rem]">
+          <h2 className="mx-auto max-w-[920px] text-center text-[1.2rem] font-medium leading-[1.02] tracking-[-0.04em] md:text-[2rem] lg:text-[2.65rem] xl:text-[2.95rem]">
             <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-blue-brand">
               Four years,
             </span>{' '}
-            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-yellow-brand">
-              plenty of pixels
-            </span>{' '}
-            and no room
+            plenty of pixels and no room
             <br />
-
-            for forgettable{' '}
-            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-lilac-brand">
-              brand identities
-            </span>
-            .
+            for forgettable brand identities.
             <br />
-
             I build{' '}
-            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-blue-brand">
-              distinctive
-            </span>{' '}
-            brand worlds that
-            <br />
-
-            make businesses easier to{' '}
             <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-yellow-brand">
-              recognise
-            </span>
-            ,
-            <br />
-
-            easier to{' '}
-            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-lilac-brand">
-              trust
+              distinctive brand worlds
             </span>{' '}
-            and much harder to forget.
+            that
+            <br />
+            make businesses easier to recognise,
+            <br />
+            easier to trust and{' '}
+            <span className="font-dribelland text-[1.42em] font-normal leading-none tracking-normal text-lilac-brand">
+              much harder to forget.
+            </span>
           </h2>
         </section>
 
@@ -69,7 +54,7 @@ export default function HomePage() {
           className="border-t border-border"
         >
           <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-24">
-            <h2 className="text-3xl font-bold tracking-tight md:text-5xl">
+            <h2 className="text-3xl font-medium tracking-tight md:text-5xl">
               Client Testimonials
             </h2>
 

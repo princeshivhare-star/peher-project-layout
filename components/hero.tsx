@@ -1,3 +1,4 @@
+// hero.tsx
 import Link from 'next/link'
 
 export function Hero() {
@@ -14,14 +15,11 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto flex w-full max-w-[1550px] flex-col items-center px-0 text-center lg:px-12 xl:px-16">
-        {/* Name */}
-        <h1 className="font-sans text-[3.8rem] font-normal leading-[0.78] tracking-[-0.07em] text-foreground sm:text-[5rem] md:text-[6rem] lg:text-[7.2rem] xl:text-[8.5rem]">
-          Muskan
-        </h1>
-
-        {/* Logo mark + flanking labels, all sharing one horizontal band */}
-        <div className="relative mt-2 flex w-full items-end justify-center lg:mt-4">
-          {/* Left label */}
+        {/* Positioning context spans the FULL section width, so the side
+            labels can sit at the true left/right edges of the page,
+            independent of the headline+logo block's own (narrower) width */}
+        <div className="relative w-full">
+          {/* Left label — pinned to the far edge of the section */}
           <p className="absolute left-0 top-1/2 hidden -translate-y-1/2 text-left font-sans text-[1.25rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.45rem] lg:block lg:text-[1.7rem]">
             Visual &amp;
             <br />
@@ -30,27 +28,7 @@ export function Hero() {
             Designer
           </p>
 
-          <img
-            src="/muskan-logo.png"
-            alt="Muskan portrait inside the brand logo"
-            className="
-              h-auto
-              w-full
-              max-w-[520px]
-              object-contain
-              mix-blend-multiply
-              contrast-[1.04]
-              saturate-[1.03]
-              transition-transform
-              duration-700
-              ease-out
-              hover:scale-[1.015]
-              lg:max-w-[620px]
-              xl:max-w-[680px]
-            "
-          />
-
-          {/* Right label */}
+          {/* Right label — pinned to the far edge of the section */}
           <p className="absolute right-0 top-1/2 hidden -translate-y-1/2 text-right font-sans text-[1.25rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.45rem] lg:block lg:text-[1.7rem]">
             Strategic
             <br />
@@ -58,9 +36,38 @@ export function Hero() {
             <br />
             Designer
           </p>
+
+          {/* Headline + logo share one shrink-wrapped box, sized to the
+              headline's own rendered width — the image is forced to that
+              same width, so their right edges always align exactly,
+              matching the reference */}
+          <div className="mx-auto w-fit">
+            <h1 className="whitespace-nowrap font-sans text-[3.8rem] font-normal leading-[0.78] tracking-[-0.01em] text-foreground sm:text-[5rem] md:text-[6rem] lg:text-[7.2rem] xl:text-[8.5rem]">
+              Muskan
+            </h1>
+
+            <img
+              src="/muskan-logo.png"
+              alt="Muskan portrait inside the brand logo"
+              className="
+                mt-2
+                h-auto
+                w-full
+                object-contain
+                mix-blend-multiply
+                contrast-[1.04]
+                saturate-[1.03]
+                transition-transform
+                duration-700
+                ease-out
+                hover:scale-[1.015]
+              "
+            />
+          </div>
         </div>
 
-        {/* Mobile-only stacked labels (since absolute side labels are hidden below lg) */}
+        {/* Mobile-only stacked labels (side labels are hidden below lg,
+            since there's no room for them at the section edges) */}
         <div className="mt-6 flex w-full justify-between gap-6 lg:hidden">
           <p className="text-left font-sans text-[1.1rem] font-normal leading-[0.9] tracking-[-0.03em] text-foreground sm:text-[1.25rem]">
             Visual &amp;
@@ -78,7 +85,8 @@ export function Hero() {
           </p>
         </div>
 
-        {/* Paragraph */}
+        {/* Paragraph — hero section stays font-normal (Roman) throughout,
+            per your sitewide rule */}
         <p className="mt-10 max-w-[560px] font-sans text-[1.25rem] font-normal leading-[1.35] tracking-[-0.02em] text-foreground sm:text-[1.4rem] lg:mt-12 lg:text-[1.5rem]">
           I turn ambitious ideas into memorable brands that capture
           attention, earn trust and help your business become the
