@@ -28,7 +28,7 @@ export function Hero() {
             </h1>
 
             {/* Labels */}
-            <div className="mt-7 grid w-full max-w-[560px] grid-cols-2 gap-8 sm:gap-12">
+            <div className="mt-7 flex w-full max-w-[760px] items-start">
               <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
                 Visual &amp;
                 <br />
@@ -37,7 +37,7 @@ export function Hero() {
                 Designer
               </p>
 
-              <p className="text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
+              <p className="ml-auto text-left text-[1.45rem] font-normal leading-[0.86] tracking-[-0.045em] text-foreground sm:text-[1.7rem] lg:text-[2rem]">
                 Emerging
                 <br />
                 designer
@@ -45,12 +45,14 @@ export function Hero() {
             </div>
 
             {/* Introduction */}
-            <p className="mt-10 max-w-[760px] font-dribelland text-[1.85rem] font-normal leading-[0.92] tracking-normal text-foreground sm:text-[2.15rem] lg:mt-12 lg:text-[2.35rem] xl:text-[2.5rem]">
-              <span className="lg:whitespace-nowrap">
+            <p className="mt-10 max-w-[820px] font-dribelland text-[1.85rem] font-normal leading-[0.92] tracking-normal text-foreground sm:text-[2.15rem] lg:mt-12 lg:text-[2.35rem] xl:text-[2.5rem]">
+              <span className="whitespace-nowrap">
                 I turn ambitious ideas into memorable brands that
               </span>
               <br />
-              capture attention, earn trust and help your business
+              <span className="whitespace-nowrap">
+                capture attention, earn trust and help your business
+              </span>
               <br />
               become the obvious choice.
             </p>
