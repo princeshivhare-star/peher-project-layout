@@ -14,37 +14,50 @@ const socialLinks = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
+    <header className="font-stack-sans sticky top-0 z-50 border-b border-border bg-background/92 backdrop-blur-md">
+      <div aria-hidden="true" className="pointer-events-none absolute left-0 top-0 z-[60] hidden h-[500vh] w-full lg:block">
+        <div className="absolute inset-y-0 left-1/2 w-full max-w-[923px] -translate-x-1/2">
+          <span className="absolute inset-y-0 left-0 w-px bg-cyan-300" />
+          <span className="absolute inset-y-0 left-[150px] w-px bg-cyan-300/80" />
+          <span className="absolute inset-y-0 left-[268px] w-px bg-cyan-300" />
+          <span className="absolute inset-y-0 left-[622px] w-px bg-cyan-300" />
+          <span className="absolute inset-y-0 left-[844px] w-px bg-cyan-300/80" />
+          <span className="absolute inset-y-0 right-0 w-px bg-cyan-300" />
+        </div>
+        <span className="absolute left-0 top-[49px] h-px w-full bg-cyan-300" />
+        <span className="absolute left-0 top-[391px] h-px w-full bg-cyan-300" />
+      </div>
+
+      <div className="mx-auto grid max-w-[923px] grid-cols-[1fr_auto] items-center gap-5 px-5 py-3 md:px-8 lg:grid-cols-[268px_354px_301px] lg:px-0">
         <Link
           href="/"
-          className="text-lg font-bold tracking-tight uppercase"
+          className="justify-self-start text-base font-bold tracking-tight uppercase"
           aria-label="Muskan — home"
         >
           Muskan
           <span className="text-blue-brand">.</span>
         </Link>
 
-        <nav aria-label="Main navigation" className="flex items-center gap-5 md:gap-8">
+        <nav aria-label="Main navigation" className="flex items-center justify-self-end gap-5 md:gap-8 lg:justify-self-center">
           {navLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center justify-self-end gap-4 md:flex">
           {socialLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium tracking-wide text-muted-foreground uppercase transition-colors hover:text-foreground"
+              className="text-[0.68rem] font-medium tracking-wide text-muted-foreground uppercase transition-colors hover:text-foreground"
             >
               {link.label}
             </a>
