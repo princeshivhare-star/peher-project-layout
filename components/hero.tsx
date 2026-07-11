@@ -116,7 +116,7 @@ export function Hero() {
                   mt-8
                   max-w-[280px]
                   text-center
-                  font-sans
+                  font-[family-name:var(--font-neue-haas)]
                   text-[1.1rem]
                   font-normal
                   leading-[1.35]
