@@ -15,7 +15,22 @@ const socialLinks = [
 export function SiteHeader() {
   return (
     <header className="font-stack-sans sticky top-0 z-50 border-b border-border bg-background/92 backdrop-blur-md">
-      {/* Grid overlay removed */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-0 top-0 z-[60] hidden h-[500vh] w-full lg:block"
+      >
+        <div className="absolute inset-y-0 left-1/2 w-full max-w-[984px] -translate-x-1/2">
+          <span className="absolute inset-y-0 left-0 w-px bg-cyan-300" />
+          <span className="absolute inset-y-0 left-[150px] w-px bg-cyan-300/80" />
+          <span className="absolute inset-y-0 left-[268px] w-px bg-cyan-300" />
+          <span className="absolute inset-y-0 left-[622px] w-px bg-cyan-300" />
+          <span className="absolute inset-y-0 left-[834px] w-px bg-cyan-300/80" />
+          <span className="absolute inset-y-0 right-0 w-px bg-cyan-300" />
+        </div>
+
+        <span className="absolute left-0 top-[49px] h-px w-full bg-cyan-300" />
+        <span className="absolute left-0 top-[391px] h-px w-full bg-cyan-300" />
+      </div>
 
       <div className="mx-auto grid max-w-[984px] grid-cols-[1fr_auto] items-center gap-5 px-5 py-3 md:px-8 lg:grid-cols-[268px_354px_362px] lg:gap-0 lg:px-0">
         <Link
