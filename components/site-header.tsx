@@ -15,6 +15,8 @@ const socialLinks = [
 export function SiteHeader() {
   return (
     <header className="font-stack-sans sticky top-0 z-50 border-b border-border bg-background/92 backdrop-blur-md">
+      {/* Grid overlay removed */}
+
       <div className="mx-auto grid max-w-[984px] grid-cols-[1fr_auto] items-center gap-5 px-5 py-3 md:px-8 lg:grid-cols-[268px_354px_362px] lg:gap-0 lg:px-0">
         <Link
           href="/"
