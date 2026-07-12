@@ -6,7 +6,7 @@ export function Hero() {
       id="about"
       className="font-stack-sans relative overflow-hidden bg-background px-5 pb-14 pt-20 text-foreground md:px-8 md:pb-20 md:pt-28 lg:min-h-[595px] lg:px-0 lg:pt-[82px]"
     >
-      <div className="mx-auto grid w-full max-w-[923px] grid-cols-1 items-start lg:grid-cols-[268px_354px_301px]">
+      <div className="mx-auto grid w-full max-w-[984px] grid-cols-1 items-start lg:grid-cols-[268px_354px_362px]">
         <div className="order-2 mt-7 flex justify-between gap-6 lg:order-1 lg:mt-[204px] lg:justify-start">
           <p className="max-w-[150px] text-left text-[1.3rem] font-normal leading-[0.86] tracking-[-0.06em] text-foreground md:text-[1.55rem] lg:text-[1.32rem]">
             Visual &amp;
@@ -53,7 +53,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="order-3 hidden lg:mt-[204px] lg:block lg:pl-[222px]">
+        <div className="order-3 hidden lg:mt-[204px] lg:flex lg:justify-end">
           <p className="max-w-[150px] text-left text-[1.32rem] font-normal leading-[0.86] tracking-[-0.06em] text-foreground">
             Strategic
             <br />
