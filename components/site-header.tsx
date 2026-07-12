@@ -1,3 +1,17 @@
+import Link from 'next/link'
+
+const navLinks = [
+  { label: 'About', href: '/#about' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'Contact', href: '/#contact' },
+]
+
+const socialLinks = [
+  { label: 'Behance', href: 'https://behance.net' },
+  { label: 'Instagram', href: 'https://instagram.com' },
+  { label: 'LinkedIn', href: 'https://linkedin.com' },
+]
+
 export function SiteHeader() {
   return (
     <header className="font-stack-sans sticky top-0 z-50 border-b border-border bg-background/92 backdrop-blur-md">
