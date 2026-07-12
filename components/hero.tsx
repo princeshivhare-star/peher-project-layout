@@ -17,52 +17,29 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="order-1 flex w-full min-w-0 flex-col items-center text-center lg:order-2 lg:w-[354px]">
-          {/* Muskan remains within both centre grid lines */}
-          <h1 className="w-full lg:-ml-[12.8px] whitespace-nowrap text-left text-[4.5rem] font-normal leading-[0.78] tracking-[-0.049em] text-foreground sm:text-[6rem] md:text-[7.75rem] lg:text-[7.4rem]">
+        <div className="order-1 flex w-full min-w-0 flex-col items-start text-left lg:order-2 lg:w-[354px]">
+          {/* Muskan — flush to the column's left grid line */}
+          <h1 className="w-full whitespace-nowrap text-left text-[4.5rem] font-normal leading-[0.78] tracking-[-0.049em] text-foreground sm:text-[6rem] md:text-[7.75rem] lg:text-[7.4rem]">
             Muskan
           </h1>
 
-          {/* Logo remains within both centre grid lines */}
-          <div className="mt-4 w-full overflow-visible md:mt-5 lg:mt-4">
+          {/* Logo — constrained to the same column width, no overflow/translate */}
+          <div className="mt-4 w-full md:mt-5 lg:mt-4">
             <img
               src="/muskan-logo.png"
               alt="Muskan portrait inside the brand logo"
-              className="block h-auto w-full object-contain lg:w-[133%] lg:max-w-none lg:-translate-x-[9.8%] lg:translate-y-[0.0001px]"
+              className="block h-auto w-full object-contain"
             />
           </div>
 
-          {/* Tagline — updated to Neue Haas Grotesk Roman with wider letter-spacing */}
-          <div className="font-haas-roman mt-8 w-full text-[1.35rem] font-normal leading-[1.02] tracking-[0.01em] text-foreground sm:text-[1.6rem] md:text-[1.85rem] lg:mt-[42px] lg:text-[1.34rem] lg:leading-[0.9] lg:tracking-[0.015em]">
-            <p className="flex w-full items-center justify-between whitespace-nowrap">
-              <span>I</span>
-              <span>turn</span>
-              <span>ambitious</span>
-              <span>ideas</span>
-              <span>into</span>
-              <span>memorable</span>
-              <span>brands</span>
-            </p>
-
-            <p className="flex w-full items-center justify-between whitespace-nowrap">
-              <span>that</span>
-              <span>capture</span>
-              <span>attention,</span>
-              <span>earn</span>
-              <span>trust</span>
-              <span>and</span>
-              <span>help</span>
-            </p>
-
-            <p className="flex w-full items-center justify-between whitespace-nowrap">
-              <span>your</span>
-              <span>business</span>
-              <span>become</span>
-              <span>the</span>
-              <span>obvious</span>
-              <span>choice.</span>
-            </p>
-          </div>
+          {/* Tagline — real spaces, normal wrapping, Neue Haas Grotesk Roman w/ wider tracking */}
+          <p className="font-haas-roman mt-8 w-full text-left text-[1.35rem] font-normal leading-[1.15] tracking-[0.01em] text-foreground sm:text-[1.6rem] md:text-[1.85rem] lg:mt-[42px] lg:text-[1.34rem] lg:leading-[1.05] lg:tracking-[0.015em]">
+            I turn ambitious ideas into memorable brands
+            <br />
+            that capture attention, earn trust and help
+            <br />
+            your business become the obvious choice.
+          </p>
 
           <div className="mt-12 flex w-full max-w-[484px] flex-col justify-center gap-4 sm:flex-row md:mt-12 md:gap-7 lg:mt-[48px] lg:w-[484px]">
             <Link
@@ -93,4 +70,4 @@ export function Hero() {
       </div>
     </section>
   )
-}
+}    
