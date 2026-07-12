@@ -24,11 +24,11 @@ export function Hero() {
           </h1>
 
           {/* Enlarged logo so its visible edges touch both grid lines */}
-          <div className="mt-4 w-full overflow-visible md:mt-5 lg:mt-4">
+          <div className="mt-7 w-full overflow-visible md:mt-8 lg:mt-7">
             <img
               src="/muskan-logo.png"
-              alt="Muskan portrait inside the brand logo"
-              className="block h-auto w-full object-contain lg:w-[132%] lg:max-w-none lg:-translate-x-[10%] lg:-translate-y-[8px]"
+              alt="Muskan portrait inside the brand logo
+              className="block h-auto w-full object-contain lg:w-[132%] lg:max-w-none lg:-translate-x-[7.2%] lg:translate-y-[6px]"          
             />
           </div>
 
