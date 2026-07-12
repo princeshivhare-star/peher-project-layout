@@ -32,8 +32,8 @@ export function Hero() {
             />
           </div>
 
-          {/* Moved slightly down, just below the horizontal grid line */}
-          <div className="mt-8 w-full text-[1.35rem] font-normal leading-[1.02] tracking-[-0.075em] text-foreground sm:text-[1.6rem] md:text-[1.85rem] lg:mt-[42px] lg:text-[1.34rem] lg:leading-[0.86]">
+          {/* Tagline — updated to Neue Haas Grotesk Roman with wider letter-spacing */}
+          <div className="font-haas-roman mt-8 w-full text-[1.35rem] font-normal leading-[1.02] tracking-[0.01em] text-foreground sm:text-[1.6rem] md:text-[1.85rem] lg:mt-[42px] lg:text-[1.34rem] lg:leading-[0.9] lg:tracking-[0.015em]">
             <p className="flex w-full items-center justify-between whitespace-nowrap">
               <span>I</span>
               <span>turn</span>
